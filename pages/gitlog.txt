@@ -1,3 +1,9 @@
+commit e8f41fb5974b3c10e4d8216fdac9cb62790b7703
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:34:31 2020 +1000
+
+    added html structure for about page
+
 commit 8fbff3c02699694f9251234806fe5816a1660d66
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Wed Aug 26 15:22:01 2020 +1000
