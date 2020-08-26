@@ -2,6 +2,34 @@
     margin: 0;
     padding: 0;
 }
+ 
+
+
+.hero-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../imgs/Hero_1600x900.jpg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}   
+
+.inner-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
 
