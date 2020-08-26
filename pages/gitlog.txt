@@ -1,3 +1,9 @@
+commit c374dd59a9a924b5e8ec3b9df32e98dbe69cb66e
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:40:26 2020 +1000
+
+    added html link placeholder for resume
+
 commit e8f41fb5974b3c10e4d8216fdac9cb62790b7703
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Wed Aug 26 15:34:31 2020 +1000
