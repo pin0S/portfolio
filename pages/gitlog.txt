@@ -1,3 +1,9 @@
+commit b9e4c2fa3dff4f3c90c25e66f5177335e36407f5
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 16:10:39 2020 +1000
+
+    added html for the contact page based on wireframe
+
 commit 8f444a4d79dab937b950643ebf543e6803248e6e
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Wed Aug 26 15:59:58 2020 +1000

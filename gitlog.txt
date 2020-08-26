@@ -1,3 +1,15 @@
+commit ddb8522edb224c65611d8ab783fa8cfb385607c9
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:17:05 2020 +1000
+
+    added about.html to pages folder
+
+commit 89563f45c52bc2ac82fdb8ecf71e3b966f0027a5
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:13:31 2020 +1000
+
+    added html structure for social media icons on index.html
+
 commit c8f0683f5290201879b2c6ce3b033ce109255a03
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Wed Aug 26 15:00:50 2020 +1000
