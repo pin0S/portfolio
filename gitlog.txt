@@ -1,3 +1,9 @@
+commit c8f0683f5290201879b2c6ce3b033ce109255a03
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:00:50 2020 +1000
+
+    added html structure for hero section on index.html
+
 commit 63140150390dcfcbb1ee982ac8298619ba0089f6
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Wed Aug 26 14:53:56 2020 +1000
