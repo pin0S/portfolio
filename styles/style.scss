@@ -166,9 +166,19 @@ section {
     position: relative;
     width: 100%;
     margin: 1em;
+    box-sizing: border-box;
     border: 1px solid red;
 
     p {
         display: block;
     }
+}
+
+/*contact page*/
+
+.contact-form-container {
+    width: 80vw;
+    position: relative;
+    border: 1px solid black;
+    margin: 0px auto;
 }

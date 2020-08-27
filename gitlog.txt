@@ -1,3 +1,9 @@
+commit 8801059420ec190423c320efc2d35109c5d12f3d
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 16:53:02 2020 +1000
+
+    blog post flexbox container and box cards addedto css
+
 commit 8c9513ece98f64bddfa18526db185013a94d0bd0
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Thu Aug 27 14:22:48 2020 +1000
