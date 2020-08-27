@@ -102,7 +102,20 @@ section {
 
 .about-box {
     width: 100%;
+    margin: 1em;
 }
+
+#box-resume {
+    
+    ul {
+        list-style: none;    
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
 
 #about-photo {
     width: 100%;
@@ -110,3 +123,7 @@ section {
     border: 2px black solid;
 }
 
+.icon {
+    width: 20%;
+    height: 20%;
+}

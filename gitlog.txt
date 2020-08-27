@@ -1,3 +1,21 @@
+commit b60b37f3705c86e3b328235c8667a2e7bd0e07c2
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 13:36:52 2020 +1000
+
+    added mobile friendly flexbox to about page
+
+commit 04d386e13fe86eb0da8d8c6f8d0bf58b539d854b
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 12:01:53 2020 +1000
+
+    added nav styling to about page and styled section h1's
+
+commit 298aa53f35d10cbaf17594ce647d9980f4253aef
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 11:48:10 2020 +1000
+
+    finished styling flexbox nav bar
+
 commit fd04d38ff9c55f2af70c3822ba9484970cffa291
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Thu Aug 27 11:09:10 2020 +1000
