@@ -151,3 +151,24 @@ section {
         display: inline;
     }
 }
+
+/*blog page*/
+
+.flexbox-container-blog {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: 5% 10% 5% 10%;
+}
+
+.blog-box {
+    position: relative;
+    width: 100%;
+    margin: 1em;
+    border: 1px solid red;
+
+    p {
+        display: block;
+    }
+}

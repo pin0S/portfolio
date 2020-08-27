@@ -1,3 +1,9 @@
+commit 8c9513ece98f64bddfa18526db185013a94d0bd0
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 14:22:48 2020 +1000
+
+    flex-flow and project boxes css styling set for project items to make mobile friendly
+
 commit d1f5b95fd7804ef68d9b29369002bb18cf96eb0a
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Thu Aug 27 14:12:08 2020 +1000
