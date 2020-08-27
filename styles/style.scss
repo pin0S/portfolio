@@ -30,6 +30,41 @@
     text-align: left;
 }
 
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    max-height: 72px;
+    max-width: 72px;
+}
+
+
+.navigation-container {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+}
+
+.navigation-list-item {
+
+}
+
+.navigation-link {
+   text-decoration: none;
+}
+
+
 .hero-content h1 {
     
 }
