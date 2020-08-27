@@ -119,15 +119,14 @@ section h2 {
 
 /*contact page*/
 .contact-form-container {
-  max-width: 315px;
-  width: 100%;
+  width: 80vw;
   position: relative;
   margin: 0px auto; }
 
 #contact-form {
   background: #b2f7ef;
   padding: 25px;
-  margin: 50px 0; }
+  margin: 50px 10px; }
   #contact-form h3 {
     color: #F96;
     display: block;
@@ -138,13 +137,13 @@ section h2 {
     display: block;
     font-size: 13px; }
   #contact-form input {
-    width: 100%;
+    width: 90%;
     border: 1px solid #CCC;
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px; }
   #contact-form textarea {
-    width: 100%;
+    width: 90%;
     border: 1px solid #CCC;
     background: #FFF;
     margin: 0 0 5px;
