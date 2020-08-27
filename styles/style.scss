@@ -4,7 +4,6 @@
 }
  
 
-
 .hero-image {
     position: relative;
     height: 100vh;
@@ -24,12 +23,17 @@
 }
 
 .hero-content {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
     text-align: left;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
+
+.hero-content h1 {
+    
+}
+
 
 
 

@@ -1,3 +1,21 @@
+commit 7cf5536946a597ac8a6067712b26533e69911e78
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 09:56:10 2020 +1000
+
+    hero image added to css style and made responsive
+
+commit 3f2c372655b3b8c69ab0b7165bd828949841e947
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 08:44:25 2020 +1000
+
+    * margin and padding to 0px
+
+commit 0f691b6003f76915854e92dfd138c2a2130dd701
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 08:37:44 2020 +1000
+
+    added hero image to the index.html
+
 commit 4b2df0635f551a398fc74bb01e7443748e037ed8
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Wed Aug 26 16:25:37 2020 +1000
