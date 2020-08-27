@@ -1,3 +1,5 @@
+/*colors*/
+/*fonts*/
 * {
   margin: 0;
   padding: 0; }
@@ -25,23 +27,28 @@
   transform: translate(-50%, -50%);
   text-align: left; }
 
+/*navbar*/
 header {
   background-color: #bdb2ff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 30px 70px; }
+  padding: 10px 5px; }
 
 nav ul {
   list-style: none; }
 nav li {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 3px;
   text-transform: uppercase; }
 nav a {
   text-decoration: none;
   color: #fff; }
 nav a:hover {
   color: #fdffb6; }
+
+/*section styling*/
+section h1 {
+  font-family: "Roboto Mono", monospace; }
 
 /*# sourceMappingURL=style.css.map */

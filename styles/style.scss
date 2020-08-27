@@ -1,6 +1,11 @@
+/*colors*/
 $primary-color: #000;
 $secondary-color: #fff;
 $hover-color: #fdffb6;
+
+/*fonts*/
+$heading-font: 'Roboto Mono', monospace;
+
 
 * {
     margin: 0;
@@ -34,26 +39,25 @@ $hover-color: #fdffb6;
     text-align: left;
 }
 
+/*navbar*/
+
 header {
     background-color: #bdb2ff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 30px 70px;
+    padding: 10px 5px;
 }
 
 
 nav {
-
-    
-
     ul {
         list-style: none;
     }
 
     li {
         display: inline-block;
-        padding: 0 15px;
+        padding: 0 3px;
         text-transform: uppercase;
 
     }
@@ -65,13 +69,14 @@ nav {
 
     a:hover {
         color: $hover-color;
-    }
-    
-
-    
+    }    
 }
 
+/*section styling*/
 
+section h1 {
+    font-family: $heading-font;
+}
 
 
 
