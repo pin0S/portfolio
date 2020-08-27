@@ -1,3 +1,9 @@
+commit 9e70953f327beb22fc50a94b7e531aac8e6c1de3
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 13:58:10 2020 +1000
+
+    about page basic mobile styling complete
+
 commit b60b37f3705c86e3b328235c8667a2e7bd0e07c2
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Thu Aug 27 13:36:52 2020 +1000

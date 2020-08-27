@@ -92,6 +92,8 @@ section {
 
 }
 
+/*about page*/
+
 .flexbox-container-about {
     display: flex;
     flex-wrap: wrap;
@@ -126,4 +128,14 @@ section {
 .icon {
     width: 20%;
     height: 20%;
+}
+
+/* projects page*/
+
+.flexbox-container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: 5% 10% 5% 10%;
 }
