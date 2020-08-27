@@ -1,3 +1,15 @@
+commit fd04d38ff9c55f2af70c3822ba9484970cffa291
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 11:09:10 2020 +1000
+
+    navigation bar done with flex-box, commiting this version while I try another design so I can come back to it if need be
+
+commit 0d25a4f78951d5a5a4d6072a9ca91409d5dbbdba
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 10:05:34 2020 +1000
+
+    hero content positioned
+
 commit 7cf5536946a597ac8a6067712b26533e69911e78
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Thu Aug 27 09:56:10 2020 +1000

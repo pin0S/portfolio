@@ -25,28 +25,23 @@
   transform: translate(-50%, -50%);
   text-align: left; }
 
-header::after {
-  content: '';
-  display: table;
-  clear: both; }
-
-.logo {
-  max-height: 72px;
-  max-width: 72px; }
-
-.navigation-container {
-  position: fixed;
-  top: 0;
-  z-index: 5; }
-
-.navigation-list {
+header {
+  background-color: #bdb2ff;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  list-style: none;
-  text-align: center; }
+  align-items: center;
+  padding: 30px 70px; }
 
-.navigation-link {
-  text-decoration: none; }
+nav ul {
+  list-style: none; }
+nav li {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase; }
+nav a {
+  text-decoration: none;
+  color: #fff; }
+nav a:hover {
+  color: #fdffb6; }
 
 /*# sourceMappingURL=style.css.map */
