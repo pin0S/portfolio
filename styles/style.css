@@ -31,7 +31,8 @@ h2 {
   padding-right: 10px;
   padding-left: 10px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  height: 100vh; }
 
 .hero-content {
   position: absolute;
@@ -39,6 +40,10 @@ h2 {
   left: 40%;
   transform: translate(-50%, -50%);
   text-align: left; }
+  .hero-content h2 {
+    color: #fff;
+    background-color: #7768AE;
+    text-transform: lowercase; }
   .hero-content ul {
     padding-top: 15px;
     list-style: none; }
@@ -137,6 +142,26 @@ section h2 {
   border: 1px solid red; }
   .blog-box p {
     display: block; }
+
+/*blog posts*/
+.blog-post-container {
+  padding: 55px 10px 40px 10px;
+  background-color: #F4F4F8; }
+  .blog-post-container h2 {
+    font-size: 2em;
+    padding-bottom: 5px; }
+  .blog-post-container img {
+    width: 100%;
+    margin-bottom: 10px; }
+  .blog-post-container h5 {
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 10px; }
+
+.post-content p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-family: Georgia, serif;
+  font-size: 1.2em; }
 
 /*contact page*/
 .contact-form-container {
