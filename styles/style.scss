@@ -1,7 +1,9 @@
 /*colors*/
-$primary-color: #008276;
-$secondary-color: #23D38A;
-$hover-color: #FBBE49;
+$primary-color: #7f7f7f;
+$secondary-color: #F4F4F8;
+$hover-color: #7768AE;
+
+$homepage-color: #F4F4F8;
 
 /*nintendo-colors*/
 
@@ -15,13 +17,27 @@ $secondary-font-color: #fff;
     margin: 0;
     padding: 0;
 }
- 
+
+h1 {
+    font-family: $heading-font;
+    color: $font-color;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: $heading-font;
+    color: $font-color;
+    font-size: 1.5em;
+}
+
+/*homepage*/
 
 .hero-image {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../imgs/Hero_1600x900.jpg');
+    /*background-image: url('../imgs/Hero_1600x900.jpg');*/
+    background-color: $homepage-color;
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover;
@@ -29,8 +45,8 @@ $secondary-font-color: #fff;
 
 .inner-container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -41,7 +57,27 @@ $secondary-font-color: #fff;
     left: 40%;
     transform: translate(-50%, -50%);
     text-align: left;
+
+    ul {
+        padding-top: 15px;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+    
+    a {
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+    }
+
 }
+
+
 
 /*navbar*/
 

@@ -1,3 +1,27 @@
+commit 81f3db44a2e3a59805adbbdc268472651eace849
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 08:29:58 2020 +1000
+
+    color scheme changed to hyrule
+
+commit d6937da35181368e06f741709341f172e210d51a
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 19:30:39 2020 +1000
+
+    html pages for blog posts created
+
+commit cb4405cdd91bd16df9fea714b1b70c1cff939b16
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 17:50:59 2020 +1000
+
+    added href links between pages to the navigation bar on all pages
+
+commit 872a2283bd34b50fb59c515a1a84712863f1a87e
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 17:38:45 2020 +1000
+
+    draft styling for the contact form add with fieldsets updated
+
 commit 99f27d8fe0455f67b2c31912c5b95e0e17eec8fe
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Thu Aug 27 17:18:41 2020 +1000
