@@ -29,7 +29,7 @@
 
 /*navbar*/
 header {
-  background-color: #bdb2ff;
+  background-color: #f7d6e0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -119,7 +119,57 @@ section h2 {
 
 /*contact page*/
 .contact-form-container {
-  border: 1px solid black;
-  text-align: center; }
+  max-width: 315px;
+  width: 100%;
+  position: relative;
+  margin: 0px auto; }
+
+#contact-form {
+  background: #b2f7ef;
+  padding: 25px;
+  margin: 50px 0; }
+  #contact-form h3 {
+    color: #F96;
+    display: block;
+    font-size: 30px;
+    font-weight: 400; }
+  #contact-form h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px; }
+  #contact-form input {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px; }
+  #contact-form textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    height: 100px;
+    max-width: 100%;
+    resize: none; }
+  #contact-form button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px; }
+  #contact-form button:hover {
+    background: #09C;
+    transition: background 0.3s ease-in-out; }
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,13 @@
 /*colors*/
-$primary-color: #000;
-$secondary-color: #fff;
+$primary-color: #f7d6e0;
+$secondary-color: #b2f7ef;
 $hover-color: #fdffb6;
+
 
 /*fonts*/
 $heading-font: 'Roboto Mono', monospace;
-
+$font-color: #000;
+$secondary-font-color: #fff;
 
 * {
     margin: 0;
@@ -42,7 +44,7 @@ $heading-font: 'Roboto Mono', monospace;
 /*navbar*/
 
 header {
-    background-color: #bdb2ff;
+    background-color: $primary-color;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -64,7 +66,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: $secondary-color;
+        color: $secondary-font-color;
     }
 
     a:hover {
@@ -177,8 +179,70 @@ section {
 /*contact page*/
 
 .contact-form-container {
-    width: 80vw;
+    max-width: 315px;
+    width: 100%;
     position: relative;
-    border: 1px solid black;
     margin: 0px auto;
+}
+
+#contact-form {
+    background: $secondary-color;
+    padding: 25px;
+    margin: 50px 0;
+
+    h3 {
+        color: #F96;
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    h4 {
+        margin:5px 0 15px;
+        display:block;
+        font-size:13px;
+    }
+
+    input {
+        width:100%;
+	    border:1px solid #CCC;
+	    background:#FFF;
+	    margin:0 0 5px;
+	    padding:10px;
+    }
+
+    textarea {
+        width:100%;
+	    border:1px solid #CCC;
+	    background:#FFF;
+	    margin:0 0 5px;
+	    padding:10px;
+        height:100px;
+	    max-width:100%;
+        resize:none;
+    }
+
+    button {
+        cursor:pointer;
+        width:100%;
+        border:none;
+        background:#0CF;
+        color:#FFF;
+        margin:0 0 5px;
+        padding:10px;
+        font-size:15px;
+    }
+
+    button:hover {
+        background:#09C;
+        transition:background 0.3s ease-in-out;
+    }
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
 }

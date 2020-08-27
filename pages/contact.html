@@ -29,15 +29,22 @@
             <h1>Get in touch with me</h1>
         
 
-            <section id="contact-form-container ">
-                <form>
-                    <label>Contact me</label><br>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" value="first and last name"><br><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" value="Your email address" required><br><br>
-                    <label for="message">Your Message</label><br>
-                    <textarea name="message" id="message" rows="4" cols="35">Enter your message here</textarea>
+            <section class="contact-form-container ">
+                <form id="contact-form">
+                    <h3>Contact me</h3>
+                    <h4>Contact me today about anything!</h4>
+                    <fieldset>
+                        <input type="text" id="name" name="name" value="Your name" tabindex="1">
+                    </fieldset>
+                    <fieldset>
+                        <input type="email" id="email" name="email" value="Your Email Address" required tabindex="2">
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Type your Message Here...." tabindex="3" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
                 </form>
             </section>
 

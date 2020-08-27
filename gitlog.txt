@@ -1,3 +1,9 @@
+commit 99f27d8fe0455f67b2c31912c5b95e0e17eec8fe
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Aug 27 17:18:41 2020 +1000
+
+    basic css styling added to contact page
+
 commit 8801059420ec190423c320efc2d35109c5d12f3d
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Thu Aug 27 16:53:02 2020 +1000
