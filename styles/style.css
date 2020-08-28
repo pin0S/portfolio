@@ -4,6 +4,7 @@
 /*screen sizes*/
 /*mixins*/
 /*nav elements*/
+/*animations*/
 * {
   margin: 0;
   padding: 0; }
@@ -59,13 +60,44 @@ p {
     left: 40%;
     transform: translate(-50%, -50%);
     text-align: left; }
+    .hero-content h1 {
+      position: relative;
+      animation-name: heading-slide;
+      animation-duration: 1.5s;
+      animation-direction: forwards;
+      animation-play-state: ease-in; }
+  @keyframes heading-slide {
+    from {
+      transform: translateX(-100%); }
+    to {
+      transform: translateX(0); } }
     .hero-content h2 {
       color: #fff;
       background-color: #7768AE;
-      text-transform: lowercase; }
+      text-transform: lowercase;
+      position: relative;
+      animation-name: heading-slide;
+      animation-duration: 2.5s;
+      animation-direction: forwards;
+      animation-play-state: ease-out; }
+  @keyframes heading-slide {
+    from {
+      transform: translateX(-400%); }
+    to {
+      transform: translateX(0); } }
     .hero-content ul {
       padding-top: 15px;
-      list-style: none; }
+      list-style: none;
+      position: relative;
+      animation-name: fade-in;
+      animation-duration: 4s; }
+  @keyframes fade-in {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 0.1; }
+    100% {
+      opacity: 1; } }
     .hero-content li {
       display: inline-block; }
     .hero-content a img {
@@ -98,15 +130,45 @@ p {
     text-align: left; }
     .hero-content h1 {
       font-size: 3em;
-      display: block; }
+      display: block;
+      position: relative;
+      animation-name: heading-slide;
+      animation-duration: 1.5s;
+      animation-direction: forwards;
+      animation-play-state: ease-in; }
+  @keyframes heading-slide {
+    from {
+      transform: translateX(-100%); }
+    to {
+      transform: translateX(0); } }
     .hero-content h2 {
       color: #fff;
       background-color: #7768AE;
       text-transform: lowercase;
-      font-size: 2em; }
+      font-size: 2em;
+      position: relative;
+      animation-name: heading-slide;
+      animation-duration: 2.5s;
+      animation-direction: forwards;
+      animation-play-state: ease-out; }
+  @keyframes heading-slide {
+    from {
+      transform: translateX(-400%); }
+    to {
+      transform: translateX(0); } }
     .hero-content ul {
       padding-top: 15px;
-      list-style: none; }
+      list-style: none;
+      position: relative;
+      animation-name: fade-in;
+      animation-duration: 4s; }
+  @keyframes fade-in {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 0.1; }
+    100% {
+      opacity: 1; } }
     .hero-content li {
       display: inline-block;
       padding-right: 15px; }
@@ -127,37 +189,37 @@ header {
     list-style: none; }
   nav li {
     display: inline-block;
-    padding: 0 3px;
+    padding: 0 1px;
     text-transform: uppercase;
     font-family: "Press Start 2P", cursive;
-    font-size: .8em; }
+    font-size: .7em; }
   nav .button-one {
     background-color: #3BB273;
     color: #fff;
     padding: 10px 2px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px #339963; }
+    box-shadow: -3px 3px 3px #339963; }
   nav .button-two {
     background-color: #4D9DE0;
     color: #fff;
     color: #fff;
     padding: 10px 2px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px #2F8DDA; }
+    box-shadow: -3px 3px 3px #2F8DDA; }
   nav .button-three {
     background-color: #E15554;
     color: #fff;
     color: #fff;
     padding: 10px 2px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px #DA2F2F; }
+    box-shadow: -3px 3px 3px #DA2F2F; }
   nav .button-four {
     background-color: #E1BC29;
     color: #fff;
     color: #fff;
     padding: 10px 2px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px #C4A31C; }
+    box-shadow: -3px 3px 3px #C4A31C; }
   nav li:hover {
     transform: scale(1.2, 1.2); }
   nav a {
@@ -166,11 +228,6 @@ header {
 @media only screen and (min-width: 580px) {
   header {
     justify-content: space-between; }
-    header a {
-      text-decoration: none;
-      display: inline;
-      color: #F4F4F8;
-      font-family: "Press Start 2P", cursive; }
     header img {
       padding-left: 10px; }
 
@@ -182,34 +239,34 @@ header {
     margin-right: 20px;
     text-transform: uppercase;
     font-family: "Press Start 2P", cursive;
-    font-size: .8em; }
+    font-size: 1em; }
   nav .button-one {
     background-color: #3BB273;
     color: #fff;
     padding: 10px 2px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px #339963; }
+    box-shadow: -3px 3px 3px #339963; }
   nav .button-two {
     background-color: #4D9DE0;
     color: #fff;
     color: #fff;
     padding: 10px 2px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px #2F8DDA; }
+    box-shadow: -3px 3px 3px #2F8DDA; }
   nav .button-three {
     background-color: #E15554;
     color: #fff;
     color: #fff;
     padding: 10px 2px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px #DA2F2F; }
+    box-shadow: -3px 3px 3px #DA2F2F; }
   nav .button-four {
     background-color: #E1BC29;
     color: #fff;
     color: #fff;
     padding: 10px 2px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px #C4A31C; }
+    box-shadow: -3px 3px 3px #C4A31C; }
   nav li:hover {
     transform: scale(1.2, 1.2); }
   nav a {
@@ -307,7 +364,7 @@ section h2 {
     display: block;
     background-color: #7768AE;
     color: #fff;
-    box-shadow: 3px 3px 2px #66569F;
+    box-shadow: -3px 3px 3px #66569F;
     font-family: "Press Start 2P", cursive;
     padding: 5px;
     margin: 10px 0px 0px 3px; }

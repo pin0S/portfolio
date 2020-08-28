@@ -34,7 +34,49 @@ $font-background-1: #7768AE;
     border-radius: 10%;
 }
 
-$button-shadow: 3px 3px 2px;
+/*animations*/
+
+@mixin animate-headings {
+    position: relative;
+    animation-name: heading-slide;
+    animation-duration: 1.5s;
+    animation-direction: forwards;
+    animation-play-state: ease-in;
+
+    @keyframes heading-slide {
+        from { transform: translateX(-100%);}
+        to {transform: translateX(0);}
+    }
+}
+
+@mixin animate-heading-2 {
+    position: relative;
+    animation-name: heading-slide;
+    animation-duration: 2.5s;
+    animation-direction: forwards;
+    animation-play-state: ease-out;
+
+    @keyframes heading-slide {
+        from { transform: translateX(-400%);}
+        to {transform: translateX(0);}
+    }
+}
+
+@mixin appear-animation {
+    position: relative;
+    animation-name: fade-in;
+    animation-duration: 4s;
+
+    @keyframes fade-in {
+        0% { opacity: 0;}
+        50% {opacity: 0.1;}
+        100% { opacity: 1 ;}
+    }
+}
+
+
+
+$button-shadow: -3px 3px 3px;
 
 $button-hover: scale(1.2, 1.2);
 
@@ -107,15 +149,21 @@ p {
         transform: translate(-50%, -50%);
         text-align: left;
 
+        h1 {
+            @include animate-headings;
+        }
+
         h2 {
             color: $secondary-font-color;
             background-color: $font-background-1;
             text-transform: lowercase;
+            @include animate-heading-2;
         }
 
         ul {
             padding-top: 15px;
             list-style: none;
+            @include appear-animation;
         }
 
         li {
@@ -166,6 +214,7 @@ p {
         h1 {
             font-size: 3em;
             display: block;
+            @include animate-headings;
         }
 
         h2 {
@@ -173,11 +222,13 @@ p {
             background-color: $font-background-1;
             text-transform: lowercase;
             font-size: 2em;
+            @include animate-heading-2;
         }
     
         ul {
             padding-top: 15px;
             list-style: none;
+            @include appear-animation;
         }
     
         li {
@@ -218,10 +269,10 @@ header {
 
         li {
             display: inline-block;
-            padding: 0 3px;
+            padding: 0 1px;
             text-transform: uppercase;
             font-family: $nav-font;
-            font-size: .8em;
+            font-size: .7em;
         }
 
         .button-one {
@@ -252,7 +303,6 @@ header {
             color: $secondary-font-color;
             @include nav-box;
             box-shadow: $button-shadow #C4A31C;
-
         }
 
 
@@ -272,13 +322,6 @@ header {
     header {
         justify-content: space-between;
 
-        a {
-            text-decoration: none;
-            display: inline;
-            color: $secondary-color;
-            font-family: $nav-font;
-        }
-
         img {
             padding-left: 10px;
         }
@@ -296,7 +339,7 @@ header {
             margin-right: 20px;
             text-transform: uppercase;
             font-family: $nav-font;
-            font-size: .8em;
+            font-size: 1em;
         }
 
         .button-one {
