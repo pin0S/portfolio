@@ -1,6 +1,8 @@
 /*colors*/
 /*nintendo-colors*/
 /*fonts*/
+/*screen sizes*/
+/*mixins*/
 /*nav elements*/
 * {
   margin: 0;
@@ -26,44 +28,91 @@ h3 {
 h5 {
   font-family: "Roboto Mono", monospace; }
 
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  letter-spacing: 1px; }
+
 /*homepage*/
-.hero-image {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  /*background-image: url('../imgs/Hero_1600x900.jpg');*/
-  background-color: #F4F4F8;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+@media only screen and (max-width: 580px) {
+  .hero-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    /*background-image: url('../imgs/Hero_1600x900.jpg');*/
+    background-color: #F4F4F8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
 
-.inner-container {
-  width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100vh; }
+  .inner-container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh; }
 
-.hero-content {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  text-align: left; }
-  .hero-content h2 {
-    color: #fff;
-    background-color: #7768AE;
-    text-transform: lowercase; }
-  .hero-content ul {
-    padding-top: 15px;
-    list-style: none; }
-  .hero-content li {
-    display: inline-block; }
-  .hero-content a img {
-    width: 32px;
-    height: 32px; }
+  .hero-content {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left; }
+    .hero-content h2 {
+      color: #fff;
+      background-color: #7768AE;
+      text-transform: lowercase; }
+    .hero-content ul {
+      padding-top: 15px;
+      list-style: none; }
+    .hero-content li {
+      display: inline-block; }
+    .hero-content a img {
+      width: 32px;
+      height: 32px; } }
+@media only screen and (min-width: 580px) {
+  .hero-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    /*background-image: url('../imgs/Hero_1600x900.jpg');*/
+    background-color: #F4F4F8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
 
+  .inner-container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh; }
+
+  .hero-content {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left; }
+    .hero-content h1 {
+      font-size: 3em;
+      display: block; }
+    .hero-content h2 {
+      color: #fff;
+      background-color: #7768AE;
+      text-transform: lowercase;
+      font-size: 2em; }
+    .hero-content ul {
+      padding-top: 15px;
+      list-style: none; }
+    .hero-content li {
+      display: inline-block;
+      padding-right: 15px; }
+    .hero-content a img {
+      width: 56px;
+      height: 56px; } }
 /*navbar*/
 header {
   background-color: #7f7f7f;
@@ -72,47 +121,100 @@ header {
   align-items: center;
   padding: 10px 5px; }
 
-nav ul {
-  list-style: none; }
-nav li {
-  display: inline-block;
-  padding: 0 3px;
-  text-transform: uppercase;
-  font-family: "Press Start 2P", cursive;
-  font-size: .8em; }
-nav .button-one {
-  background-color: #3BB273;
-  color: #fff;
-  padding: 10px 2px;
-  border-radius: 10%;
-  box-shadow: 3px 3px 2px #339963; }
-nav .button-two {
-  background-color: #4D9DE0;
-  color: #fff;
-  color: #fff;
-  padding: 10px 2px;
-  border-radius: 10%;
-  box-shadow: 3px 3px 2px #2F8DDA; }
-nav .button-three {
-  background-color: #E15554;
-  color: #fff;
-  color: #fff;
-  padding: 10px 2px;
-  border-radius: 10%;
-  box-shadow: 3px 3px 2px #DA2F2F; }
-nav .button-four {
-  background-color: #E1BC29;
-  color: #fff;
-  color: #fff;
-  padding: 10px 2px;
-  border-radius: 10%;
-  box-shadow: 3px 3px 2px #C4A31C; }
-nav li:hover {
-  transform: scale(1.2, 1.2); }
-nav a {
-  text-decoration: none;
-  color: #fff; }
+/*mobile navbar*/
+@media only screen and (max-width: 580px) {
+  nav ul {
+    list-style: none; }
+  nav li {
+    display: inline-block;
+    padding: 0 3px;
+    text-transform: uppercase;
+    font-family: "Press Start 2P", cursive;
+    font-size: .8em; }
+  nav .button-one {
+    background-color: #3BB273;
+    color: #fff;
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px #339963; }
+  nav .button-two {
+    background-color: #4D9DE0;
+    color: #fff;
+    color: #fff;
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px #2F8DDA; }
+  nav .button-three {
+    background-color: #E15554;
+    color: #fff;
+    color: #fff;
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px #DA2F2F; }
+  nav .button-four {
+    background-color: #E1BC29;
+    color: #fff;
+    color: #fff;
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px #C4A31C; }
+  nav li:hover {
+    transform: scale(1.2, 1.2); }
+  nav a {
+    text-decoration: none;
+    color: #fff; } }
+@media only screen and (min-width: 580px) {
+  header {
+    justify-content: space-between; }
+    header a {
+      text-decoration: none;
+      display: inline;
+      color: #F4F4F8;
+      font-family: "Press Start 2P", cursive; }
+    header img {
+      padding-left: 10px; }
 
+  nav ul {
+    list-style: none; }
+  nav li {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-family: "Press Start 2P", cursive;
+    font-size: .8em; }
+  nav .button-one {
+    background-color: #3BB273;
+    color: #fff;
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px #339963; }
+  nav .button-two {
+    background-color: #4D9DE0;
+    color: #fff;
+    color: #fff;
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px #2F8DDA; }
+  nav .button-three {
+    background-color: #E15554;
+    color: #fff;
+    color: #fff;
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px #DA2F2F; }
+  nav .button-four {
+    background-color: #E1BC29;
+    color: #fff;
+    color: #fff;
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px #C4A31C; }
+  nav li:hover {
+    transform: scale(1.2, 1.2); }
+  nav a {
+    text-decoration: none;
+    color: #fff; } }
 /*section styling*/
 main h1 {
   font-family: "Roboto Mono", monospace;

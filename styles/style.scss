@@ -19,6 +19,13 @@ $font-color: #000;
 $secondary-font-color: #fff;
 $font-background-1: #7768AE;
 
+/*screen sizes*/
+
+
+/*mixins*/
+
+
+
 /*nav elements*/
 
 @mixin nav-box {
@@ -62,60 +69,132 @@ h5 {
     font-family: $heading-font;
 }
 
-/*homepage*/
-
-.hero-image {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    /*background-image: url('../imgs/Hero_1600x900.jpg');*/
-    background-color: $body-color;
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover;
-}   
-
-.inner-container {
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 100vh;
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
-.hero-content {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    text-align: left;
+/*homepage*/
 
-    h2 {
-        color: $secondary-font-color;
-        background-color: $font-background-1;
-        text-transform: lowercase;
+@media only screen and (max-width: 580px)
+    {
+
+    .hero-image {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        /*background-image: url('../imgs/Hero_1600x900.jpg');*/
+        background-color: $body-color;
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
+    }   
+
+    .inner-container {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100vh;
     }
 
-    ul {
-        padding-top: 15px;
-        list-style: none;
-    }
+    .hero-content {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        text-align: left;
 
-    li {
-        display: inline-block;
-    }
-    
-    a {
-        img {
-            width: 32px;
-            height: 32px;
+        h2 {
+            color: $secondary-font-color;
+            background-color: $font-background-1;
+            text-transform: lowercase;
+        }
+
+        ul {
+            padding-top: 15px;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+        
+        a {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+
         }
 
     }
 
 }
 
+@media only screen and (min-width: 580px) {
+
+    .hero-image {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        /*background-image: url('../imgs/Hero_1600x900.jpg');*/
+        background-color: $body-color;
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
+    }   
+    
+    .inner-container {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100vh;
+    }
+    
+    .hero-content {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+    
+        h1 {
+            font-size: 3em;
+            display: block;
+        }
+
+        h2 {
+            color: $secondary-font-color;
+            background-color: $font-background-1;
+            text-transform: lowercase;
+            font-size: 2em;
+        }
+    
+        ul {
+            padding-top: 15px;
+            list-style: none;
+        }
+    
+        li {
+            display: inline-block;
+            padding-right: 15px;
+        }
+        
+        a {
+            img {
+                width: 56px;
+                height: 56px;
+            }
+    
+        }
+    
+    }
+}
 
 
 /*navbar*/
@@ -128,61 +207,143 @@ header {
     padding: 10px 5px;
 }
 
+/*mobile navbar*/
 
-nav {
-    ul {
-        list-style: none;
-    }
+@media only screen and (max-width: 580px) {
 
-    li {
-        display: inline-block;
-        padding: 0 3px;
-        text-transform: uppercase;
-        font-family: $nav-font;
-        font-size: .8em;
-    }
+    nav {
+        ul {
+            list-style: none;
+        }
 
-    .button-one {
-        background-color: $y-button;
-        @include nav-box;
-        box-shadow: $button-shadow #339963;
+        li {
+            display: inline-block;
+            padding: 0 3px;
+            text-transform: uppercase;
+            font-family: $nav-font;
+            font-size: .8em;
+        }
 
-    }
+        .button-one {
+            background-color: $y-button;
+            @include nav-box;
+            box-shadow: $button-shadow #339963;
 
-    .button-two {
-        background-color: $x-button;
-        color: $secondary-font-color;
-        @include nav-box;
-        box-shadow: $button-shadow #2F8DDA;
+        }
 
-    }
+        .button-two {
+            background-color: $x-button;
+            color: $secondary-font-color;
+            @include nav-box;
+            box-shadow: $button-shadow #2F8DDA;
 
-    .button-three {
-        background-color: $a-button;
-        color: $secondary-font-color;
-        @include nav-box;
-        box-shadow: $button-shadow #DA2F2F;
+        }
 
-    }
+        .button-three {
+            background-color: $a-button;
+            color: $secondary-font-color;
+            @include nav-box;
+            box-shadow: $button-shadow #DA2F2F;
 
-    .button-four {
-        background-color: $b-button;
-        color: $secondary-font-color;
-        @include nav-box;
-        box-shadow: $button-shadow #C4A31C;
+        }
 
-    }
+        .button-four {
+            background-color: $b-button;
+            color: $secondary-font-color;
+            @include nav-box;
+            box-shadow: $button-shadow #C4A31C;
+
+        }
 
 
-    li:hover {
-        transform: $button-hover;
-    }
+        li:hover {
+            transform: $button-hover;
+        }
 
-    a {
-        text-decoration: none;
-        color: $secondary-font-color;
+        a {
+            text-decoration: none;
+            color: $secondary-font-color;
+        }
     }
 }
+
+@media only screen and (min-width: 580px) {
+
+    header {
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            display: inline;
+            color: $secondary-color;
+            font-family: $nav-font;
+        }
+
+        img {
+            padding-left: 10px;
+        }
+    }
+
+    
+    nav {
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 20px;
+            text-transform: uppercase;
+            font-family: $nav-font;
+            font-size: .8em;
+        }
+
+        .button-one {
+            background-color: $y-button;
+            @include nav-box;
+            box-shadow: $button-shadow #339963;
+
+        }
+
+        .button-two {
+            background-color: $x-button;
+            color: $secondary-font-color;
+            @include nav-box;
+            box-shadow: $button-shadow #2F8DDA;
+
+        }
+
+        .button-three {
+            background-color: $a-button;
+            color: $secondary-font-color;
+            @include nav-box;
+            box-shadow: $button-shadow #DA2F2F;
+
+        }
+
+        .button-four {
+            background-color: $b-button;
+            color: $secondary-font-color;
+            @include nav-box;
+            box-shadow: $button-shadow #C4A31C;
+
+        }
+
+
+        li:hover {
+            transform: $button-hover;
+        }
+
+        a {
+            text-decoration: none;
+            color: $secondary-font-color;
+        }
+    }
+
+}
+    
+
 
 /*section styling*/
 

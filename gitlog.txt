@@ -1,3 +1,9 @@
+commit 757def3e4b3a7150f8ba8b4b62cc8eb0e8e98dce
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 12:07:13 2020 +1000
+
+    project boxes styled on the project page for mobile
+
 commit 2e6053d74be8ef2e00b17f21519ca01098fd6fae
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Fri Aug 28 11:32:13 2020 +1000
