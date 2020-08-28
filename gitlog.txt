@@ -1,3 +1,9 @@
+commit 2e6053d74be8ef2e00b17f21519ca01098fd6fae
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 11:32:13 2020 +1000
+
+    blog cards styled first draft
+
 commit 7053e57e9daf6710c3050176ac4084cd4d7f9729
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Fri Aug 28 10:56:59 2020 +1000

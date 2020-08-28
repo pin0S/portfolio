@@ -37,7 +37,7 @@ $button-hover: scale(1.2, 1.2);
     padding: 0;
 }
 
-.body {
+body {
     background-color: $body-color;
 }
 
@@ -51,6 +51,11 @@ h2 {
     font-family: $heading-font;
     color: $font-color;
     font-size: 1.5em;
+}
+
+h3 {
+    font-family: $heading-font;
+    color: $font-color;
 }
 
 h5 {
@@ -252,11 +257,19 @@ section {
     position: relative;
     width: 100%;
     margin: 1em;
-    border: 1px solid red;
+    border: 1px solid #54585a;
+    background-color: #E6E6EA;
+    box-shadow: 2px 2px 2px #b2b4b2;
+    
+    h3 {
+        margin: 5px 0px 0px 5px;
+    }
 
     p {
-        display: inline;
+        display: block;
+        margin: 5px 0px 0px 5px;
     }
+
 }
 
 /*blog page*/
