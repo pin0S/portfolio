@@ -2,7 +2,7 @@
 $primary-color: #7f7f7f;
 $secondary-color: #F4F4F8;
 $hover-color: #7768AE;
-$homepage-color: #F4F4F8;
+$body-color: #F4F4F8;
 
 /*nintendo-colors*/
 $x-button: #4D9DE0;
@@ -29,10 +29,16 @@ $font-background-1: #7768AE;
 
 $button-shadow: 3px 3px 2px;
 
+$button-hover: scale(1.2, 1.2);
+
 
 * {
     margin: 0;
     padding: 0;
+}
+
+.body {
+    background-color: $body-color;
 }
 
 h1 {
@@ -58,7 +64,7 @@ h5 {
     height: 100vh;
     overflow: hidden;
     /*background-image: url('../imgs/Hero_1600x900.jpg');*/
-    background-color: $homepage-color;
+    background-color: $body-color;
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover;
@@ -162,17 +168,9 @@ nav {
 
     }
 
-    /*cant get working ask jo for help*/
 
     li:hover {
-        animation-name: press;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-    }
-
-    @keyframes press {
-        from {transfrom: scale(0,0);}
-        to {transfrom: scale(2,2);}
+        transform: $button-hover;
     }
 
     a {
@@ -276,11 +274,44 @@ section {
     width: 100%;
     margin: 1em;
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 1px solid #54585a;
+    background-color: #E6E6EA;
+    box-shadow: 2px 2px 2px #b2b4b2;
 
+    img {
+        display: block;
+        margin: 0px auto 10px;
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+    }
+
+    h2 {
+        margin: 10px;
+    }
+
+    h5 {
+        margin: 10px;
+    }
 
     p {
+        margin: 10px;
         display: block;
+    }
+
+    button {
+        display: block;
+        background-color: $font-background-1;
+        color: $secondary-font-color;
+        box-shadow: $button-shadow #66569F;
+        font-family: $nav-font;
+        padding: 5px;
+        margin: 10px 0px 0px 3px;
+    }
+
+    button:hover {
+        transform: $button-hover;
     }
 }
 

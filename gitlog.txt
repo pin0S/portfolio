@@ -1,3 +1,21 @@
+commit 7053e57e9daf6710c3050176ac4084cd4d7f9729
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 10:56:59 2020 +1000
+
+    button styling and font links for navbar added to all pages on site
+
+commit 0257668bd0951e73198234337152b5ad4d88981e
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 09:39:05 2020 +1000
+
+    blog post pages styled
+
+commit e6521d229227207175f76de633b4ad0da4e82b27
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 08:56:22 2020 +1000
+
+    heading fonts added to stylesheet
+
 commit 81f3db44a2e3a59805adbbdc268472651eace849
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Fri Aug 28 08:29:58 2020 +1000
