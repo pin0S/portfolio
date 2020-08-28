@@ -2,19 +2,32 @@
 $primary-color: #7f7f7f;
 $secondary-color: #F4F4F8;
 $hover-color: #7768AE;
-
-
 $homepage-color: #F4F4F8;
 
 /*nintendo-colors*/
+$x-button: #4D9DE0;
+$y-button: #3BB273;
+$b-button: #E1BC29;
+$a-button: #E15554;
 
 
 /*fonts*/
 $heading-font: 'Roboto Mono', monospace;
 $post-font: Georgia, serif;
+$nav-font: 'Press Start 2P', cursive;
 $font-color: #000;
 $secondary-font-color: #fff;
 $font-background-1: #7768AE;
+
+/*nav elements*/
+
+@mixin nav-box {
+    color: $secondary-font-color;
+    padding: 10px 2px;
+    border-radius: 10%;
+}
+
+$button-shadow: 3px 3px 2px;
 
 
 * {
@@ -32,6 +45,10 @@ h2 {
     font-family: $heading-font;
     color: $font-color;
     font-size: 1.5em;
+}
+
+h5 {
+    font-family: $heading-font;
 }
 
 /*homepage*/
@@ -84,10 +101,6 @@ h2 {
             height: 32px;
         }
 
-    a:hover {
-
-    }
-
     }
 
 }
@@ -114,17 +127,58 @@ nav {
         display: inline-block;
         padding: 0 3px;
         text-transform: uppercase;
+        font-family: $nav-font;
+        font-size: .8em;
+    }
 
+    .button-one {
+        background-color: $y-button;
+        @include nav-box;
+        box-shadow: $button-shadow #339963;
+
+    }
+
+    .button-two {
+        background-color: $x-button;
+        color: $secondary-font-color;
+        @include nav-box;
+        box-shadow: $button-shadow #2F8DDA;
+
+    }
+
+    .button-three {
+        background-color: $a-button;
+        color: $secondary-font-color;
+        @include nav-box;
+        box-shadow: $button-shadow #DA2F2F;
+
+    }
+
+    .button-four {
+        background-color: $b-button;
+        color: $secondary-font-color;
+        @include nav-box;
+        box-shadow: $button-shadow #C4A31C;
+
+    }
+
+    /*cant get working ask jo for help*/
+
+    li:hover {
+        animation-name: press;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes press {
+        from {transfrom: scale(0,0);}
+        to {transfrom: scale(2,2);}
     }
 
     a {
         text-decoration: none;
         color: $secondary-font-color;
     }
-
-    a:hover {
-        color: $hover-color;
-    }    
 }
 
 /*section styling*/
@@ -223,6 +277,7 @@ section {
     margin: 1em;
     box-sizing: border-box;
     border: 1px solid red;
+
 
     p {
         display: block;
