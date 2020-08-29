@@ -1,3 +1,21 @@
+commit 261d0e747c49c6a79d00d7506f3a8f5d6ab78070
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 15:14:09 2020 +1000
+
+    media queries added to the blog page flexbox
+
+commit 079c7afe463c5375a61c390115b65f857d6afc45
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 14:53:19 2020 +1000
+
+    animations added to hero content
+
+commit 49990ba3d7dbd5e09b1da60eda3ccbd9b8d91d47
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Fri Aug 28 14:12:55 2020 +1000
+
+    index.hmtl page and nav bar made responsive
+
 commit 757def3e4b3a7150f8ba8b4b62cc8eb0e8e98dce
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Fri Aug 28 12:07:13 2020 +1000
