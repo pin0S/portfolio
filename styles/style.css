@@ -73,7 +73,7 @@ p {
       transform: translateX(40%); } }
     .hero-content h2 {
       color: #fff;
-      background-color: #7768AE;
+      background-color: #66569F;
       text-transform: lowercase;
       position: relative;
       animation-name: heading-slide;
@@ -143,7 +143,7 @@ p {
       transform: translateX(40%); } }
     .hero-content h2 {
       color: #fff;
-      background-color: #7768AE;
+      background-color: #66569F;
       text-transform: lowercase;
       font-size: 2em;
       position: relative;
@@ -284,7 +284,7 @@ main h1::after {
   position: relative;
   width: 100%;
   height: 15px;
-  background-color: #7768AE;
+  background-color: #66569F;
   display: block; }
 
 section h2 {
@@ -304,26 +304,27 @@ section h2 {
   margin: 1em; }
 
 #about-photo {
+  width: 100%;
+  height: 30vh;
   background-image: url("https://via.placeholder.com/150");
   background-size: cover;
   background-position: bottom;
-  border: 2px #7768AE solid;
-  flex-grow: 2; }
+  border: 2px #66569F solid; }
 
 .title {
   font-style: bold;
-  background: linear-gradient(to top, #7768AE 20%, transparent 20%); }
+  background: linear-gradient(to top, rgba(102, 86, 159, 0.4) 30%, transparent 30%); }
 
 .kick-ass {
   display: inline-block;
   font-style: italic; }
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 790px) {
   #about-photo {
-    flex-basis: 45%; }
+    flex-basis: 44%; }
 
   #about-0 {
-    flex-basis: 45%; }
+    flex-basis: 44%; }
 
   #about-1 {
     flex-basis: auto; }
@@ -340,11 +341,6 @@ section h2 {
   list-style: none; }
 #box-resume li {
   display: inline-block; }
-
-#about-photo {
-  width: 100%;
-  height: 30vh;
-  border: 2px black solid; }
 
 .icon {
   width: 20%;
@@ -404,7 +400,7 @@ section h2 {
     display: block; }
   .blog-box button {
     display: block;
-    background-color: #7768AE;
+    background-color: #66569F;
     color: #fff;
     box-shadow: -3px 3px 3px #66569F;
     font-family: "Press Start 2P", cursive;
@@ -502,5 +498,50 @@ fieldset {
   min-width: 100%;
   padding: 0;
   width: 100%; }
+
+/* About carousel*/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1; }
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white; }
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic; }
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,9 @@
+commit 7f03ee3c6dbdc2da2ca56deb268dd0d1e4c11983
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Sat Aug 29 11:11:33 2020 +1000
+
+    about page media query added for wireframe desktop design
+
 commit 261d0e747c49c6a79d00d7506f3a8f5d6ab78070
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Fri Aug 28 15:14:09 2020 +1000

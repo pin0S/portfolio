@@ -17,7 +17,7 @@ $post-font: Georgia, serif;
 $nav-font: 'Press Start 2P', cursive;
 $font-color: #000;
 $secondary-font-color: #fff;
-$font-background-1: #7768AE;
+$font-background-1: #66569F;
 
 /*screen sizes*/
 
@@ -437,16 +437,17 @@ section {
 }
 
 #about-photo {
+    width: 100%;
+    height: 30vh;
     background-image: url("https://via.placeholder.com/150");
     background-size: cover;
     background-position: bottom;
     border: 2px $font-background-1 solid;
-    flex-grow: 2;
 }
 
 .title {
     font-style: bold;
-    background: linear-gradient(to top, $font-background-1 20%, transparent 20%);
+    background: linear-gradient(to top, rgba(102, 86, 159, 0.4) 30%, transparent 30%);
 
 }
 
@@ -455,15 +456,14 @@ section {
     font-style: italic;
 }
 
-
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 790px) {
     
     #about-photo {
-        flex-basis: 45%;
+        flex-basis: 44%;
     }
 
     #about-0 {
-        flex-basis: 45%;
+        flex-basis: 44%;
     }
 
     #about-1 {
@@ -493,13 +493,6 @@ section {
     li {
         display: inline-block;
     }
-}
-
-
-#about-photo {
-    width: 100%;
-    height: 30vh;
-    border: 2px black solid;
 }
 
 .icon {
@@ -717,3 +710,53 @@ fieldset {
 	padding: 0;
 	width: 100%;
 }
+
+/* About carousel*/
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
