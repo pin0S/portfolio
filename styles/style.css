@@ -35,74 +35,74 @@ p {
   letter-spacing: 1px; }
 
 /*homepage*/
-@media only screen and (max-width: 580px) {
-  .hero-image {
+.hero-image {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  /*background-image: url('../imgs/Hero_1600x900.jpg');*/
+  background-color: #F4F4F8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.inner-container {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh; }
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left; }
+  .hero-content h1 {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
-    /*background-image: url('../imgs/Hero_1600x900.jpg');*/
-    background-color: #F4F4F8;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    animation-name: heading-slide;
+    animation-duration: 1.5s;
+    animation-direction: forwards;
+    animation-play-state: ease-in; }
+@keyframes heading-slide {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(40%); } }
+  .hero-content h2 {
+    color: #fff;
+    background-color: #a7a4e0;
+    text-transform: lowercase;
+    position: relative;
+    animation-name: heading-slide;
+    animation-duration: 2.5s;
+    animation-direction: forwards;
+    animation-play-state: ease-out; }
+@keyframes heading-slide {
+  from {
+    transform: translateX(-400%); }
+  to {
+    transform: translateX(0); } }
+  .hero-content ul {
+    padding-top: 15px;
+    list-style: none;
+    position: relative;
+    animation-name: fade-in;
+    animation-duration: 4s; }
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+  .hero-content li {
+    display: inline-block; }
+  .hero-content a img {
+    width: 32px;
+    height: 32px; }
 
-  .inner-container {
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 100vh; }
-
-  .hero-content {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    text-align: left; }
-    .hero-content h1 {
-      position: relative;
-      animation-name: heading-slide;
-      animation-duration: 1.5s;
-      animation-direction: forwards;
-      animation-play-state: ease-in; }
-  @keyframes heading-slide {
-    from {
-      transform: translateX(-100%); }
-    to {
-      transform: translateX(40%); } }
-    .hero-content h2 {
-      color: #fff;
-      background-color: #a7a4e0;
-      text-transform: lowercase;
-      position: relative;
-      animation-name: heading-slide;
-      animation-duration: 2.5s;
-      animation-direction: forwards;
-      animation-play-state: ease-out; }
-  @keyframes heading-slide {
-    from {
-      transform: translateX(-400%); }
-    to {
-      transform: translateX(0); } }
-    .hero-content ul {
-      padding-top: 15px;
-      list-style: none;
-      position: relative;
-      animation-name: fade-in;
-      animation-duration: 4s; }
-  @keyframes fade-in {
-    0% {
-      opacity: 0; }
-    50% {
-      opacity: 0.1; }
-    100% {
-      opacity: 1; } }
-    .hero-content li {
-      display: inline-block; }
-    .hero-content a img {
-      width: 32px;
-      height: 32px; } }
 @media only screen and (min-width: 580px) {
   .hero-image {
     position: relative;
@@ -184,47 +184,47 @@ header {
   padding: 10px 5px; }
 
 /*mobile navbar*/
-@media only screen and (max-width: 580px) {
-  nav ul {
-    list-style: none; }
-  nav li {
-    display: inline-block;
-    padding: 0 1px;
-    text-transform: uppercase;
-    font-family: "Press Start 2P", cursive;
-    font-size: .7em; }
-  nav .button-one {
-    background-color: #3BB273;
-    color: #fff;
-    padding: 10px 2px;
-    border-radius: 10%;
-    box-shadow: -3px 3px 3px #339963; }
-  nav .button-two {
-    background-color: #4D9DE0;
-    color: #fff;
-    color: #fff;
-    padding: 10px 2px;
-    border-radius: 10%;
-    box-shadow: -3px 3px 3px #2F8DDA; }
-  nav .button-three {
-    background-color: #E15554;
-    color: #fff;
-    color: #fff;
-    padding: 10px 2px;
-    border-radius: 10%;
-    box-shadow: -3px 3px 3px #DA2F2F; }
-  nav .button-four {
-    background-color: #E1BC29;
-    color: #fff;
-    color: #fff;
-    padding: 10px 2px;
-    border-radius: 10%;
-    box-shadow: -3px 3px 3px #C4A31C; }
-  nav li:hover {
-    transform: scale(0.9, 0.9); }
-  nav a {
-    text-decoration: none;
-    color: #fff; } }
+nav ul {
+  list-style: none; }
+nav li {
+  display: inline-block;
+  padding: 0 1px;
+  text-transform: uppercase;
+  font-family: "Press Start 2P", cursive;
+  font-size: .7em; }
+nav .button-one {
+  background-color: #3BB273;
+  color: #fff;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #339963; }
+nav .button-two {
+  background-color: #4D9DE0;
+  color: #fff;
+  color: #fff;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #2F8DDA; }
+nav .button-three {
+  background-color: #E15554;
+  color: #fff;
+  color: #fff;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #DA2F2F; }
+nav .button-four {
+  background-color: #E1BC29;
+  color: #fff;
+  color: #fff;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #C4A31C; }
+nav li:hover {
+  transform: scale(0.9, 0.9); }
+nav a {
+  text-decoration: none;
+  color: #fff; }
+
 /*big screen navbar*/
 @media only screen and (min-width: 580px) {
   header {
@@ -340,11 +340,17 @@ section h2 {
 #box-resume ul {
   list-style: none; }
 #box-resume li {
-  display: inline-block; }
-
-.icon {
-  width: 20%;
-  height: 20%; }
+  display: inline;
+  font-size: 1em;
+  padding-left: 10px;
+  font-family: Georgia, serif; }
+#box-resume li img {
+  width: 20px;
+  height: 20px; }
+#box-resume li a {
+  text-decoration: none; }
+#box-resume #get {
+  padding-bottom: 10px; }
 
 /* projects page*/
 .flexbox-container-projects {
@@ -417,8 +423,7 @@ section h2 {
     background-color: #a7a4e0;
     color: #fff;
     box-shadow: -3px 3px 3px #66569F;
-    font-family: "Press Start 2P", cursive;
-    padding: 5px;
+    font-family: "Roboto Mono", monospace;
     margin: 10px 0px 0px 10px; }
   .blog-box button:hover {
     transform: scale(0.9, 0.9); }
@@ -506,8 +511,7 @@ section h2 {
       color: #FFF;
       margin: 0 0 5px;
       padding: 10px;
-      font-size: 15px;
-      box-sizing: content-box; }
+      font-size: 15px; }
     #contact-form fieldset button:hover {
       background: #09C;
       transition: background 0.3s ease-in-out; }
@@ -536,6 +540,28 @@ section h2 {
   .find-me-box img {
     width: 56px;
     height: 56px; } }
+/*------------------------Footer------------------------*/
+footer {
+  background-color: #7f7f7f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 5px; }
+  footer p {
+    font-family: "Press Start 2P", cursive;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: .6em; }
+  footer ul {
+    list-style: none; }
+  footer li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: .7em; }
+  footer a img {
+    width: 32px;
+    height: 32px; }
+
 /* About carousel*/
 /* Slideshow container */
 .slideshow-container {

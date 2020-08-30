@@ -119,68 +119,65 @@ p {
 
 /*homepage*/
 
-@media only screen and (max-width: 580px)
-    {
+.hero-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    /*background-image: url('../imgs/Hero_1600x900.jpg');*/
+    background-color: $body-color;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}   
 
-    .hero-image {
-        position: relative;
-        height: 100vh;
-        overflow: hidden;
-        /*background-image: url('../imgs/Hero_1600x900.jpg');*/
-        background-color: $body-color;
-        background-repeat: no-repeat; 
-        background-position: center;
-        background-size: cover;
-    }   
+.inner-container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh;
+}
 
-    .inner-container {
-        width: 100%;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-right: auto;
-        margin-left: auto;
-        height: 100vh;
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+    h1 {
+        @include animate-headings;
     }
 
-    .hero-content {
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        text-align: left;
+    h2 {
+        color: $secondary-font-color;
+        background-color: $font-background-1;
+        text-transform: lowercase;
+        @include animate-heading-2;
+    }
 
-        h1 {
-            @include animate-headings;
-        }
+    ul {
+        padding-top: 15px;
+        list-style: none;
+        @include appear-animation;
+    }
 
-        h2 {
-            color: $secondary-font-color;
-            background-color: $font-background-1;
-            text-transform: lowercase;
-            @include animate-heading-2;
-        }
-
-        ul {
-            padding-top: 15px;
-            list-style: none;
-            @include appear-animation;
-        }
-
-        li {
-            display: inline-block;
-        }
-        
-        a {
-            img {
-                width: 32px;
-                height: 32px;
-            }
-
+    li {
+        display: inline-block;
+    }
+    
+    a {
+        img {
+            width: 32px;
+            height: 32px;
         }
 
     }
 
 }
+
+
 
 @media only screen and (min-width: 580px) {
 
@@ -260,62 +257,60 @@ header {
 
 /*mobile navbar*/
 
-@media only screen and (max-width: 580px) {
+nav {
+    ul {
+        list-style: none;
+    }
 
-    nav {
-        ul {
-            list-style: none;
-        }
+    li {
+        display: inline-block;
+        padding: 0 1px;
+        text-transform: uppercase;
+        font-family: $nav-font;
+        font-size: .7em;
+    }
 
-        li {
-            display: inline-block;
-            padding: 0 1px;
-            text-transform: uppercase;
-            font-family: $nav-font;
-            font-size: .7em;
-        }
+    .button-one {
+        background-color: $y-button;
+        @include nav-box;
+        box-shadow: $button-shadow #339963;
 
-        .button-one {
-            background-color: $y-button;
-            @include nav-box;
-            box-shadow: $button-shadow #339963;
+    }
 
-        }
+    .button-two {
+        background-color: $x-button;
+        color: $secondary-font-color;
+        @include nav-box;
+        box-shadow: $button-shadow #2F8DDA;
 
-        .button-two {
-            background-color: $x-button;
-            color: $secondary-font-color;
-            @include nav-box;
-            box-shadow: $button-shadow #2F8DDA;
+    }
 
-        }
+    .button-three {
+        background-color: $a-button;
+        color: $secondary-font-color;
+        @include nav-box;
+        box-shadow: $button-shadow #DA2F2F;
 
-        .button-three {
-            background-color: $a-button;
-            color: $secondary-font-color;
-            @include nav-box;
-            box-shadow: $button-shadow #DA2F2F;
+    }
 
-        }
-
-        .button-four {
-            background-color: $b-button;
-            color: $secondary-font-color;
-            @include nav-box;
-            box-shadow: $button-shadow #C4A31C;
-        }
+    .button-four {
+        background-color: $b-button;
+        color: $secondary-font-color;
+        @include nav-box;
+        box-shadow: $button-shadow #C4A31C;
+    }
 
 
-        li:hover {
-            transform: $button-hover;
-        }
+    li:hover {
+        transform: $button-hover;
+    }
 
-        a {
-            text-decoration: none;
-            color: $secondary-font-color;
-        }
+    a {
+        text-decoration: none;
+        color: $secondary-font-color;
     }
 }
+
 
 /*big screen navbar*/
 
@@ -487,18 +482,31 @@ section {
 #box-resume {
     
     ul {
-        list-style: none;    
+        list-style: none;   
     }
 
     li {
-        display: inline-block;
+        display: inline;
+        font-size: 1em;
+        padding-left: 10px;
+        font-family: $post-font;
+        }
+    
+    li img {
+        width: 20px;
+        height: 20px;
     }
+
+    li a {
+        text-decoration: none;
+    }
+
+    #get {
+        padding-bottom: 10px;
+    }
+
 }
 
-.icon {
-    width: 20%;
-    height: 20%;
-}
 
 /* projects page*/
 
@@ -602,8 +610,7 @@ section {
         background-color: $font-background-1;
         color: $secondary-font-color;
         box-shadow: $button-shadow #66569F;
-        font-family: $nav-font;
-        padding: 5px;
+        font-family: $heading-font;
         margin: 10px 0px 0px 10px;
     }
 
@@ -683,6 +690,7 @@ section {
     margin: 50px 10px;
     border: 1px #000 solid;
 
+
     h3 {
         color: #F96;
         display: block;
@@ -732,7 +740,6 @@ section {
             margin:0 0 5px;
             padding:10px;
             font-size:15px;
-            box-sizing: content-box;
         }
 
         button:hover {
@@ -785,6 +792,42 @@ section {
         }
     }
 }
+
+
+/*------------------------Footer------------------------*/
+footer {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px;
+
+    p {
+        font-family: $nav-font;
+        text-transform: uppercase;
+        color: $secondary-font-color;
+        font-size: .6em;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 5px;
+        font-size: .7em;
+    }
+
+    a {
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
 
 
 /* About carousel*/
