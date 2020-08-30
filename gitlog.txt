@@ -1,3 +1,15 @@
+commit 860e974ae5a1eeee1f4092eb6a47fbda7afd287b
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Sun Aug 30 09:54:04 2020 +1000
+
+    added media query to projects page
+
+commit b20003ca8c289b044b6ee038ef6c7ae3ea1326bb
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Sun Aug 30 09:19:30 2020 +1000
+
+    quote carousel added to the about page
+
 commit 7f03ee3c6dbdc2da2ca56deb268dd0d1e4c11983
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Sat Aug 29 11:11:33 2020 +1000

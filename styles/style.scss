@@ -1,7 +1,7 @@
 /*colors*/
 $primary-color: #7f7f7f;
 $secondary-color: #F4F4F8;
-$hover-color: #7768AE;
+$hover-color: #a7a4e0;
 $body-color: #F4F4F8;
 
 /*nintendo-colors*/
@@ -17,7 +17,7 @@ $post-font: Georgia, serif;
 $nav-font: 'Press Start 2P', cursive;
 $font-color: #000;
 $secondary-font-color: #fff;
-$font-background-1: #66569F;
+$font-background-1: #a7a4e0;
 
 /*screen sizes*/
 
@@ -515,6 +515,7 @@ section {
     width: 100%;
     flex-basis: 35%;
     margin: 1em;
+    padding-bottom: 10px;
     border: 1px solid #54585a;
     background-color: #E6E6EA;
     box-shadow: 2px 2px 2px #b2b4b2;
@@ -562,13 +563,13 @@ section {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    
     width: 80vw;
     margin: 5% 10% 5% 10%;
 }
 
 .blog-box {
     position: relative;
-    max-width: 350px;
     margin: 1em;
     border: 1px solid #54585a;
     background-color: #E6E6EA;
@@ -618,20 +619,23 @@ section {
 }
 
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 768px) {
     .flexbox-container-blog {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        width: 80vw;
-        margin: 2% 8% 2% 8%;
+        justify-content: center;
     }
-
+    
     .blog-box {
-        min-width: 350px;
-        max-width: 30%;
-        margin: 1em;
-        margin: 10px;
+        flex-basis: 35%;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    .flexbox-container-blog {
+        justify-content: flex-start;
+    }
+    
+    .blog-box {
+        flex-basis: 29%;
     }
 }
 
