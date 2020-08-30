@@ -475,14 +475,16 @@ section h2 {
   margin: 50px 10px;
   border: 1px #000 solid; }
   #contact-form h3 {
-    color: #F96;
+    color: #000;
     display: block;
-    font-size: 30px;
-    font-weight: 400; }
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: "Press Start 2P", cursive; }
   #contact-form h4 {
     margin: 5px 0 15px;
     display: block;
-    font-size: 13px; }
+    font-size: 1em;
+    font-family: 'VT323', monospace; }
   #contact-form fieldset {
     border: medium none !important;
     margin: 0 0 10px;
@@ -507,11 +509,11 @@ section h2 {
       cursor: pointer;
       width: 90%;
       border: 1px solid transparent;
-      background: #0CF;
+      background: #a7a4e0;
       color: #FFF;
       margin: 0 0 5px;
       padding: 10px;
-      font-size: 15px;
+      font-size: 1em;
       box-sizing: content-box; }
     #contact-form fieldset button:hover {
       background: #09C;
@@ -576,7 +578,8 @@ footer {
     margin: 0 auto;
     transition: 300ms; }
   .flexbox-container-about .slideshow {
-    position: relative; }
+    position: relative;
+    z-index: 10; }
   .flexbox-container-about .slide-entry {
     background: rgba(167, 164, 224, 0.3);
     position: absolute;
@@ -586,6 +589,7 @@ footer {
     margin: 0 auto;
     transition: 300ms;
     text-align: center;
+    z-index: 20;
     opacity: 0;
     visibility: hidden;
     padding: 20px 5%;
@@ -604,7 +608,7 @@ footer {
     left: 0;
     bottom: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     width: 100%;
     list-style: none;
     padding: 0;
@@ -614,8 +618,8 @@ footer {
       color: #ccc;
       font-size: 25px; }
   .flexbox-container-about #prev-slide {
-    margin-left: -20px; }
+    margin-left: -15px; }
   .flexbox-container-about #next-slide {
-    margin-right: -20px; }
+    margin-right: -15px; }
 
 /*# sourceMappingURL=style.css.map */

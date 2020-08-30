@@ -692,16 +692,18 @@ section {
 
 
     h3 {
-        color: #F96;
+        color: #000;
         display: block;
-        font-size: 30px;
+        font-size: 1.2em;
         font-weight: 400;
+        font-family: $nav-font;
     }
 
     h4 {
         margin:5px 0 15px;
         display:block;
-        font-size:13px;
+        font-size: 1em;
+        font-family: 'VT323', monospace;;
     }
 
     fieldset {
@@ -735,11 +737,11 @@ section {
             cursor:pointer;
             width:90%;
             border:1px solid transparent;
-            background:#0CF;
+            background: $font-background-1;
             color:#FFF;
             margin:0 0 5px;
             padding:10px;
-            font-size:15px;
+            font-size: 1em;
             box-sizing: content-box;
         }
 
@@ -846,6 +848,7 @@ footer {
   
   .slideshow { 
     position: relative;
+    z-index: 10;
   }
   
   /* set all slides as absolute positioning so they will stack on top of each other, and hidden from one another */
@@ -859,6 +862,7 @@ footer {
     margin:0 auto;
     transition:300ms;
     text-align: center;
+    z-index: 20;
     opacity: 0;
     visibility: hidden;
     padding: 20px 5%;
@@ -884,7 +888,7 @@ footer {
     left: 0;
     bottom: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     width: 100%;
     list-style: none;
     padding: 0;
@@ -900,10 +904,11 @@ footer {
   /* pull our navigation out of the slider container to avoid z-index issues */
   
   #prev-slide { 
-    margin-left:-20px;
+    margin-left:-15px;
   }
   
   #next-slide {
-    margin-right:-20px;
+    margin-right:-15px;
   }
 }
+
