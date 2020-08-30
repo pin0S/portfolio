@@ -513,8 +513,8 @@ section {
 .project-box {
     position: relative;
     width: 100%;
-    flex-basis: 35%;
-    margin: 1em;
+    margin: 0.8em;
+    flex-basis: 80%;
     padding-bottom: 10px;
     border: 1px solid #54585a;
     background-color: #E6E6EA;
@@ -525,7 +525,6 @@ section {
     }
 
     p {
-        display: block;
         margin: 5px 0px 0px 5px;
     }
 
@@ -542,7 +541,7 @@ section {
     }
     
     .project-box {
-        flex-basis: 30%;
+        flex-basis: 44%;
     }
 }
 
@@ -682,6 +681,7 @@ section {
     background: $secondary-color;
     padding: 25px;
     margin: 50px 10px;
+    border: 1px #000 solid;
 
     h3 {
         color: #F96;
@@ -696,49 +696,96 @@ section {
         font-size:13px;
     }
 
-    input {
-        width:90%;
-	    border:1px solid #CCC;
-	    background:#FFF;
-	    margin:0 0 5px;
-	    padding:10px;
+    fieldset {
+
+        border: medium none !important;
+	    margin: 0 0 10px;
+	    min-width: 100%;
+	    padding: 0;
+	    width: 100%;
+
+
+        input {
+            width:90%;
+            border:1px solid #CCC;
+            background:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+        }
+
+        textarea {
+            width:90%;
+            border:1px solid #CCC;
+            background:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+            height:100px;
+            resize:none;
+        }
+
+        button {
+            cursor:pointer;
+            width:90%;
+            border:1px solid transparent;
+            background:#0CF;
+            color:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+            font-size:15px;
+            box-sizing: content-box;
+        }
+
+        button:hover {
+            background:#09C;
+            transition:background 0.3s ease-in-out;
+        }
+    }
+}
+	
+
+#find {
+    text-align: center;
+}
+
+.find-me-box {
+
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1em;
+    width: 80wv;
+
+
+
+    ul {
+        list-style: none;
+        margin: 0px auto;
     }
 
-    textarea {
-        width:90%;
-	    border:1px solid #CCC;
-	    background:#FFF;
-	    margin:0 0 5px;
-	    padding:10px;
-        height:100px;
-	    max-width:100%;
-        resize:none;
+    li {
+        display: inline-block;
+        padding: .3em;
     }
 
-    button {
-        cursor:pointer;
-        width:100%;
-        border:none;
-        background:#0CF;
-        color:#FFF;
-        margin:0 0 5px;
-        padding:10px;
-        font-size:15px;
-    }
+    a {text-decoration: none;}
 
-    button:hover {
-        background:#09C;
-        transition:background 0.3s ease-in-out;
+    img {
+        width: 32px;
+        height: 32px;
     }
 }
 
-fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
+@media only screen and (min-width: 768px) {
+    
+    
+    
+    .find-me-box {
+        img {
+            width: 56px;
+            height: 56px;
+        }
+    }
 }
+
 
 /* About carousel*/
 

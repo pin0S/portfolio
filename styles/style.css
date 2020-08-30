@@ -357,8 +357,8 @@ section h2 {
 .project-box {
   position: relative;
   width: 100%;
-  flex-basis: 35%;
-  margin: 1em;
+  margin: 0.8em;
+  flex-basis: 80%;
   padding-bottom: 10px;
   border: 1px solid #54585a;
   background-color: #E6E6EA;
@@ -366,7 +366,6 @@ section h2 {
   .project-box h3 {
     margin: 5px 0px 0px 5px; }
   .project-box p {
-    display: block;
     margin: 5px 0px 0px 5px; }
   .project-box img {
     max-width: 100%;
@@ -377,7 +376,7 @@ section h2 {
     justify-content: center; }
 
   .project-box {
-    flex-basis: 30%; } }
+    flex-basis: 44%; } }
 @media only screen and (min-width: 1260px) {
   .flexbox-container-projects {
     justify-content: flex-start; }
@@ -468,7 +467,8 @@ section h2 {
 #contact-form {
   background: #F4F4F8;
   padding: 25px;
-  margin: 50px 10px; }
+  margin: 50px 10px;
+  border: 1px #000 solid; }
   #contact-form h3 {
     color: #F96;
     display: block;
@@ -478,41 +478,64 @@ section h2 {
     margin: 5px 0 15px;
     display: block;
     font-size: 13px; }
-  #contact-form input {
-    width: 90%;
-    border: 1px solid #CCC;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px; }
-  #contact-form textarea {
-    width: 90%;
-    border: 1px solid #CCC;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    height: 100px;
-    max-width: 100%;
-    resize: none; }
-  #contact-form button {
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    background: #0CF;
-    color: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px; }
-  #contact-form button:hover {
-    background: #09C;
-    transition: background 0.3s ease-in-out; }
+  #contact-form fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%; }
+    #contact-form fieldset input {
+      width: 90%;
+      border: 1px solid #CCC;
+      background: #FFF;
+      margin: 0 0 5px;
+      padding: 10px; }
+    #contact-form fieldset textarea {
+      width: 90%;
+      border: 1px solid #CCC;
+      background: #FFF;
+      margin: 0 0 5px;
+      padding: 10px;
+      height: 100px;
+      resize: none; }
+    #contact-form fieldset button {
+      cursor: pointer;
+      width: 90%;
+      border: 1px solid transparent;
+      background: #0CF;
+      color: #FFF;
+      margin: 0 0 5px;
+      padding: 10px;
+      font-size: 15px;
+      box-sizing: content-box; }
+    #contact-form fieldset button:hover {
+      background: #09C;
+      transition: background 0.3s ease-in-out; }
 
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%; }
+#find {
+  text-align: center; }
 
+.find-me-box {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 1em;
+  width: 80wv; }
+  .find-me-box ul {
+    list-style: none;
+    margin: 0px auto; }
+  .find-me-box li {
+    display: inline-block;
+    padding: .3em; }
+  .find-me-box a {
+    text-decoration: none; }
+  .find-me-box img {
+    width: 32px;
+    height: 32px; }
+
+@media only screen and (min-width: 768px) {
+  .find-me-box img {
+    width: 56px;
+    height: 56px; } }
 /* About carousel*/
 /* Slideshow container */
 .slideshow-container {
