@@ -83,72 +83,45 @@
                     
                     
                 <div class="about-box" id="about-4">
-                    <div class="slideshow-container">
-                       
-                        <!-- Full-width slides/quotes -->
-                        <div class="mySlides">
-                            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                            <p class="author">- John Keats</p>
-                        </div>
 
-                        <div class="mySlides">
-                            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                            <p class="author">- Ernest Hemingway</p>
-                        </div>
+                    <div class="slide-wrap">
+                        <div class="slideshow">
+                      
+                            <div class="slide-entry">
+                                <div class="slide-content">
+                                    <h3>Peter seems like a person who worked here. <span>~Former Colleague</span></h3>
+                                </div>
+                            </div>
 
-                        <div class="mySlides">
-                            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                            <p class="author">- Thomas A. Edison</p>
-                        </div>
+                            <div class="slide-entry">
+                                <div class="slide-content">
+                                    <h3>A vegan who marketed ice-creams better than people who eat ice-cream. <span>~Ex-Boss</span></h3>
+                                </div>
+                            </div>
 
-                        <!-- Next/prev buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
+                            <div class="slide-entry">
+                                <div class="slide-content">
+                                    <h3>He never shut up about tech, so it's good to see him go into tech. <span>~Friend</span></h3>
+                                </div>
+                            </div>
 
-                    <script>
-                        var slideIndex = 1;
-                        var time = 2000;
-                        showSlides(slideIndex);
-                        changeSlide()
-                        
-                        function plusSlides(n) {
-                          showSlides(slideIndex += n);
-                        }
-                        
-                        function currentSlide(n) {
-                          showSlides(slideIndex = n);
-                        }
-                        
-                        function showSlides(n) {
-                          var i;
-                          var slides = document.getElementsByClassName("mySlides");
-                          var dots = document.getElementsByClassName("dot");
-                          if (n > slides.length) {slideIndex = 1}    
-                          if (n < 1) {slideIndex = slides.length}
-                          for (i = 0; i < slides.length; i++) {
-                              slides[i].style.display = "none";  
-                          }
-                        
-                          slides[slideIndex-1].style.display = "block";  
-                          
-                        }
+                            <div class="slide-entry">
+                                <div class="slide-content">
+                                    <h3>What career is this now? <span>~Parent</span></h3>
+                                </div>
+                            </div>
+                      
+                          <ul class="slide-nav">
+                            <li id="prev-slide"><i>«</i></li>
+                            <li id="next-slide"><i>»</i></li>
+                          </ul> <!-- end .slide-nav -->
+                      
+                        </div> <!-- end .slideshow -->
+                      
+                    </div> <!-- end .slide-wrap -->
 
-                        var j = 0;
-                        var quotes = document.getElementsByClassName("mySlides");
-                        
-                        function changeSlide() {
-                
-
-                            setTimeout(plusSlides(slideIndex+1), time)
-                        }
-
-
-                        </script>
-
-
-                    </div>
-                </div>    
+                </div>
+              
                 
 
                 <div class="about-box" id="about-5">
@@ -166,6 +139,7 @@
             </section>    
         </main>
 
+        <script type="text/javascript" src="../auto-slider.js"></script>
     </body>
 
     <footer>

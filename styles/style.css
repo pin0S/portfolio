@@ -10,7 +10,7 @@
   padding: 0; }
 
 body {
-  background-color: #F4F4F8; }
+  background-color: #fff; }
 
 h1 {
   font-family: "Roboto Mono", monospace;
@@ -40,7 +40,7 @@ p {
   height: 100vh;
   overflow: hidden;
   /*background-image: url('../imgs/Hero_1600x900.jpg');*/
-  background-color: #F4F4F8;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -109,7 +109,7 @@ p {
     height: 100vh;
     overflow: hidden;
     /*background-image: url('../imgs/Hero_1600x900.jpg');*/
-    background-color: #F4F4F8;
+    background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
@@ -177,7 +177,7 @@ p {
       height: 56px; } }
 /*navbar*/
 header {
-  background-color: #7f7f7f;
+  background-color: #D3D3D9;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -511,7 +511,8 @@ section h2 {
       color: #FFF;
       margin: 0 0 5px;
       padding: 10px;
-      font-size: 15px; }
+      font-size: 15px;
+      box-sizing: content-box; }
     #contact-form fieldset button:hover {
       background: #09C;
       transition: background 0.3s ease-in-out; }
@@ -542,7 +543,7 @@ section h2 {
     height: 56px; } }
 /*------------------------Footer------------------------*/
 footer {
-  background-color: #7f7f7f;
+  background-color: #D3D3D9;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -562,49 +563,59 @@ footer {
     width: 32px;
     height: 32px; }
 
-/* About carousel*/
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  background: #f1f1f1f1; }
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center; }
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none; }
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white; }
-
-/* Add an italic font style to all quotes */
-q {
-  font-style: italic; }
-
-/* Add a blue color to the author */
-.author {
-  color: cornflowerblue; }
+/*-----------ABout auto slider---------------*/
+/* contain the main slider */
+.flexbox-container-about {
+  /* ensure that we can adjust z-index or position elements absolutely within the slideshow itself (e.g., navigation) */
+  /* set all slides as absolute positioning so they will stack on top of each other, and hidden from one another */
+  /* set up our basic left/right navigation, would should ideally be vertically centered */
+  /* pull our navigation out of the slider container to avoid z-index issues */ }
+  .flexbox-container-about .slide-wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    transition: 300ms; }
+  .flexbox-container-about .slideshow {
+    position: relative; }
+  .flexbox-container-about .slide-entry {
+    background: rgba(167, 164, 224, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 300ms;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 5%;
+    z-index: 20; }
+    .flexbox-container-about .slide-entry.active {
+      opacity: 1;
+      visibility: visible; }
+      .flexbox-container-about .slide-entry.active span {
+        font-size: 0.8em;
+        color: #4D9DE0; }
+  .flexbox-container-about .slide-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    z-index: 0; }
+    .flexbox-container-about .slide-nav li {
+      cursor: pointer;
+      color: #ccc;
+      font-size: 25px; }
+  .flexbox-container-about #prev-slide {
+    margin-left: -20px; }
+  .flexbox-container-about #next-slide {
+    margin-right: -20px; }
 
 /*# sourceMappingURL=style.css.map */
