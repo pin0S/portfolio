@@ -117,7 +117,30 @@ p {
     letter-spacing: 1px;
 }
 
+#heading-box {
+    padding-top: 2%;
+    text-align: center;
+}
 
+#section-heading {
+    display: inline-block;
+    font-family: $heading-font;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(135, 114, 209, 0.4) 30%, transparent 30%); 
+}
+
+/*section styling*/
+
+
+section {
+
+    h2 {    
+        font-family: $heading-font;
+        font-size: 32px;
+    }
+
+}
 
 
 /*homepage*/
@@ -248,6 +271,11 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10px 5px;
+
+    img {
+        width:56px; 
+        height:72px; 
+    }
 }
 
 /*mobile navbar*/
@@ -309,13 +337,15 @@ nav {
 
 /*big screen navbar*/
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 768px) {
 
     header {
         justify-content: space-between;
 
         img {
             padding-left: 10px;
+            width: 72px;
+            height: 88px;
         }
     }
 
@@ -326,82 +356,38 @@ nav {
         }
 
         li {
-            display: inline-block;
             padding: 10px 15px;
             margin-right: 20px;
-            text-transform: uppercase;
-            font-family: $nav-font;
             font-size: 1em;
         }
 
-        .button-one {
-            background-color: $y-button;
-            @include nav-box;
-            box-shadow: $button-shadow #339963;
+    }
+}
 
-        }
+@media only screen and (min-width: 1024px) {
 
-        .button-two {
-            background-color: $x-button;
-            color: $secondary-font-color;
-            @include nav-box;
-            box-shadow: $button-shadow #2F8DDA;
+    header {
+        justify-content: space-between;
 
-        }
-
-        .button-three {
-            background-color: $a-button;
-            color: $secondary-font-color;
-            @include nav-box;
-            box-shadow: $button-shadow #DA2F2F;
-
-        }
-
-        .button-four {
-            background-color: $b-button;
-            color: $secondary-font-color;
-            @include nav-box;
-            box-shadow: $button-shadow #C4A31C;
-
-        }
-
-
-        li:hover {
-            transform: $button-hover;
-        }
-
-        a {
-            text-decoration: none;
-            color: $secondary-font-color;
+        img {
+            padding-left: 10px;
+            width: 82px;
+            height: 98px;
         }
     }
 
+    
+    nav {
+
+        li {
+            padding: 10px 15px;
+            margin-right: 20px;
+            font-size: 1.2em;
+        }
+
+    }
 }
     
-
-
-/*section styling*/
-
-main {
-    
-    h1 {
-        font-family: $heading-font;
-        font-size: 40px;
-        text-align: center;
-        margin: 10px auto 0px;
-    }
-      
-}
-
-section {
-
-    h2 {    
-        font-family: $heading-font;
-        font-size: 32px;
-    }
-
-}
-
 /*about page*/
 
 .flexbox-container-about {
@@ -437,34 +423,6 @@ section {
     font-style: italic;
 }
 
-@media only screen and (min-width: 790px) {
-    
-    #about-photo {
-        flex-basis: 44%;
-    }
-
-    #about-0 {
-        flex-basis: 44%;
-    }
-
-    #about-1 {
-        flex-basis: auto;
-    }
-
-    #about-2 {
-        flex-basis: auto;
-    }
-
-    #about-3 {
-        flex-basis: auto;
-    }
-
-    #about-4 {
-        flex-basis: auto;
-    }
-
-}
-
 #box-resume {
     
     ul {
@@ -493,6 +451,40 @@ section {
 
 }
 
+@media only screen and (min-width: 768px) {
+    
+    #about-photo {
+        flex-basis: 44%;
+    }
+
+    #about-0 {
+        flex-basis: 44%;
+    }
+
+    #about-1 {
+        flex-basis: auto;
+    }
+
+    #about-2 {
+        flex-basis: auto;
+    }
+
+    #about-3 {
+        flex-basis: auto;
+    }
+
+    #about-4 {
+        flex-basis: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    #about-photo {
+        margin-left: 0px;
+    }
+}
 
 /* projects page*/
 
@@ -523,7 +515,7 @@ section {
     }
 
     img {
-        max-width: 100%;
+        width: 100%;
         max-height: 300px;
     }
 
@@ -532,6 +524,7 @@ section {
 @media only screen and (min-width: 768px) {
     .flexbox-container-projects {
         justify-content: center;
+        margin: 5% 12% 5% 12%;
     }
     
     .project-box {
@@ -539,7 +532,7 @@ section {
     }
 }
 
-@media only screen and (min-width: 1260px) {
+@media only screen and (min-width: 1024px) {
     .flexbox-container-projects {
         justify-content: flex-start;
     }
@@ -568,12 +561,13 @@ section {
     background-color: #E6E6EA;
     box-shadow: 2px 2px 2px #b2b4b2;
     box-sizing: border-box;
+    padding-bottom: 10px;
 
     img {
         display: block;
         margin: 0px auto 10px;
         width: 100%;
-        max-height: 30%;
+        height: 30vh;
         text-align: center;
         border-radius: 0 0 10px 10px;
     }
@@ -617,13 +611,15 @@ section {
     }
     
     .blog-box {
-        flex-basis: 35%;
+        flex-basis: 40%;
     }
 }
 
-@media only screen and (min-width: 1260px) {
+@media only screen and (min-width: 1024px) {
     .flexbox-container-blog {
+        width: 85vw;
         justify-content: flex-start;
+        margin: 5% auto;
     }
     
     .blog-box {
@@ -817,7 +813,7 @@ footer {
     }
 }
 
-/*-----------ABout auto slider---------------*/
+/*-----------About auto slider---------------*/
 
 /* contain the main slider */
 
