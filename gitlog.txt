@@ -1,3 +1,39 @@
+commit 4a150894d8aaee5b5cd9b6713d5679bce497b02f
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Mon Aug 31 08:33:07 2020 +1000
+
+    contact form styling updated
+
+commit 9f5037bc43330579af6651bf0d46f54242007b5f
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Sun Aug 30 18:04:45 2020 +1000
+
+    links fixed for nav bar on blog post pages
+
+commit 682e58477c4c0f4f7c8730ed195c68259dab0021
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Sun Aug 30 17:22:40 2020 +1000
+
+    automated slider added and with content
+
+commit a8f1561d23d0ab1282212193da07ccb2560b3925
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Sun Aug 30 16:19:17 2020 +1000
+
+    footer added and styled for mobile
+
+commit c144f131515008bd3e47d9d154c5b0f2767c651d
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Sun Aug 30 15:02:53 2020 +1000
+
+    added box-sizing: content to the contact form! OMG finally found the solution! Thanks stack overflow
+
+commit 64662255316cc9521fae8dfaa94699d4aa9b72b9
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Sun Aug 30 11:59:24 2020 +1000
+
+    non-optimised images added to projects and blog pages
+
 commit 860e974ae5a1eeee1f4092eb6a47fbda7afd287b
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Sun Aug 30 09:54:04 2020 +1000
