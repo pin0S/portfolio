@@ -4,11 +4,13 @@ $secondary-color: #F4F4F8;
 $hover-color: #a7a4e0;
 $body-color: #fff;
 
-/*nintendo-colors*/
+/*nintendo-colors for navbar*/
 $x-button: #4D9DE0;
 $y-button: #3BB273;
 $b-button: #E1BC29;
 $a-button: #E15554;
+$button-shadow: -3px 3px 3px;
+$button-hover: scale(.9, .9);
 
 
 /*fonts*/
@@ -20,13 +22,7 @@ $font-color: #000;
 $secondary-font-color: #fff;
 $font-background-1: rgb(167, 164, 224);
 
-/*screen sizes*/
-
-
 /*mixins*/
-
-
-/*------------------------animations------------------------*/
 /*nav elements*/
 
 @mixin nav-box {
@@ -34,7 +30,6 @@ $font-background-1: rgb(167, 164, 224);
     padding: 10px 2px;
     border-radius: 10%;
 }
-
 
 /*------------------------animations------------------------*/
 
@@ -51,6 +46,8 @@ $font-background-1: rgb(167, 164, 224);
     }
 }
 
+/*key animation requirements for secondary text on the index page*/
+
 @mixin animate-heading-2 {
     position: relative;
     animation-name: heading-slide;
@@ -64,6 +61,8 @@ $font-background-1: rgb(167, 164, 224);
     }
 }
 
+/*icons appear for hero text on the index page*/
+
 @mixin appear-animation {
     position: relative;
     animation-name: fade-in;
@@ -76,12 +75,7 @@ $font-background-1: rgb(167, 164, 224);
     }
 }
 
-
-
-$button-shadow: -3px 3px 3px;
-
-$button-hover: scale(.9, .9);
-
+/*main styling elements for full site*/
 
 * {
     margin: 0;
@@ -91,6 +85,8 @@ $button-hover: scale(.9, .9);
 body {
     background-color: $body-color;
 }
+
+/*font styling*/
 
 h1 {
     font-family: $heading-font;
@@ -133,6 +129,8 @@ p {
 
 /*------------------------section styling------------------------*/
 
+/*alternate font size for sections*/
+
 section {
 
     h2 {    
@@ -142,13 +140,12 @@ section {
 
 }
 
-/*------------------------homepage------------------------*/
+/*------------------------homepage/index------------------------*/
 
 .hero-image {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    /*background-image: url('../imgs/Hero_1600x900.jpg');*/
     background-color: $body-color;
     background-repeat: no-repeat; 
     background-position: center;
@@ -171,10 +168,12 @@ section {
     transform: translate(-50%, -50%);
     text-align: left;
 
+    /*animation for heading*/
     h1 {
         @include animate-headings;
     }
 
+    /*animation for secondary heading and styling*/
     h2 {
         color: $secondary-font-color;
         background-color: $font-background-1;
@@ -182,6 +181,7 @@ section {
         @include animate-heading-2;
     }
 
+    /*animation and styling for social icons*/
     ul {
         padding-top: 15px;
         list-style: none;
@@ -192,26 +192,26 @@ section {
         display: inline-block;
     }
     
+    /*social icon sizing for mobile*/
     a {
         img {
             width: 32px;
             height: 32px;
         }
-
     }
-
 }
 
+/*animation for icon*/
 .logo:hover {
     animation: rumble 0.3s linear;
 }
 
 @keyframes rumble {
     25% {transform: rotate(20deg);}
-    75% {transform: rotate(-20deg);}
+    75% {transform: rotate(-40deg);}
 }
 
-
+/*ipad sizing and styling*/
 
 @media only screen and (min-width: 768px) {
   
@@ -242,6 +242,8 @@ section {
     }
 }
 
+/*desktop sizing and styling*/
+
 @media only screen and (min-width: 1024px) {
     .hero-content {
     
@@ -258,16 +260,14 @@ section {
             display: inline-block;
             padding-right: 15px;
         }
-        
+
         a {
             img {
                 width: 72px;
                 height: 72px;
             }
-    
+        }
     }
-}
-
 }
 
 /*------------------------navbar------------------------*/
@@ -279,6 +279,7 @@ header {
     align-items: center;
     padding: 10px 5px;
 
+    /*icon sizing*/
     img {
         width:56px; 
         height:72px; 
@@ -299,14 +300,14 @@ nav {
         font-family: $nav-font;
         font-size: .7em;
     }
-
+    /*about button*/
     .button-one {
         background-color: $y-button;
         @include nav-box;
         box-shadow: $button-shadow #339963;
 
     }
-
+    /*projects button*/
     .button-two {
         background-color: $x-button;
         color: $secondary-font-color;
@@ -314,7 +315,7 @@ nav {
         box-shadow: $button-shadow #2F8DDA;
 
     }
-
+    /*blog button*/
     .button-three {
         background-color: $a-button;
         color: $secondary-font-color;
@@ -322,7 +323,7 @@ nav {
         box-shadow: $button-shadow #DA2F2F;
 
     }
-
+    /*contact button*/
     .button-four {
         background-color: $b-button;
         color: $secondary-font-color;
@@ -330,7 +331,7 @@ nav {
         box-shadow: $button-shadow #C4A31C;
     }
 
-
+    /*button click hover effect*/
     li:hover {
         transform: $button-hover;
     }
@@ -341,7 +342,7 @@ nav {
     }
 }
 
-/*------------------------big screen navbar------------------------*/
+/*ipad navbar sizing and styling*/
 
 @media only screen and (min-width: 768px) {
 
@@ -354,7 +355,6 @@ nav {
             height: 88px;
         }
     }
-
     
     nav {
         ul {
@@ -366,9 +366,10 @@ nav {
             margin-right: 20px;
             font-size: 1em;
         }
-
     }
 }
+
+/*desktop navbar sizing and styling*/
 
 @media only screen and (min-width: 1024px) {
 
@@ -395,6 +396,7 @@ nav {
 }
 /*------------------------about page------------------------*/    
 
+/*about flexbox container styling*/
 .flexbox-container-about {
     display: flex;
     flex-wrap: wrap;
@@ -403,11 +405,13 @@ nav {
     margin: 5% 10% 5% 10%;
 }
 
+/*about flex card sizing*/
 .about-box {
     width: 100%;
     margin: 1em;
 }
 
+/*image of me styling*/
 #about-photo {
     width: 100%;
     height: 30vh;
@@ -417,24 +421,26 @@ nav {
     border: 2px $font-background-1 solid;
 }
 
+/*underline styling for education and work history key information*/
 .title {
     font-style: bold;
     background: linear-gradient(to top, rgba(102, 86, 159, 0.4) 30%, transparent 30%);
 
 }
 
+/*styling for kick ass descriptions of my roles*/
 .kick-ass {
     display: inline-block;
     font-style: italic;
 }
 
-/*skills bars*/
-
+/*skill bars grid*/
 .skills {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
+/*skill bar containers*/
 .progress {
     width: 100%;
     overflow: hidden;
@@ -446,6 +452,8 @@ nav {
     border-radius: 2%;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
+
+/*skill bar styling going for zelda potion bar style*/
 .progress-bar {
     float: left;
     height: 100%;
@@ -458,6 +466,13 @@ nav {
     animation-fill-mode:both;
     }
 
+.pull-left{
+    float:left;
+    padding-right: 4px;
+    margin: auto 0px;
+    }
+
+/*each individual skills class to allow to run individual animations*/
 .html {
     width: 70%;
     animation: html 2s ease-out forwards;
@@ -518,13 +533,7 @@ nav {
     100% {width: 100%;}
 }
 
-.pull-left{
-    float:left;
-    padding-right: 4px;
-    margin: auto 0px;
-}
-
-/*download resume*/
+/*download resume button styling*/
 
 #box-resume {
     display: flex;
@@ -553,6 +562,7 @@ nav {
     }
 }
 
+/*about page ipad sizing and styling*/
 
 @media only screen and (min-width: 768px) {
     
@@ -579,8 +589,9 @@ nav {
     #about-4 {
         flex-basis: auto;
     }
-
 }
+
+/*about page desktop sizing and styling*/
 
 @media only screen and (min-width: 1024px) {
     
@@ -590,6 +601,7 @@ nav {
 }
 /*------------------------projects page------------------------*/
 
+/*projects page flex container*/
 .flexbox-container-projects {
     display: flex;
     flex-flow: row wrap;
@@ -598,6 +610,7 @@ nav {
     margin: 5% 10% 5% 10%;
 }
 
+/*projects cards containers styling*/
 .project-box {
     position: relative;
     width: 100%;
@@ -622,6 +635,7 @@ nav {
     }
 }
 
+/*styling for the hover effect on the project card*/
 .overlay {
     position: absolute;
     top: 0;
@@ -635,10 +649,12 @@ nav {
     background: linear-gradient(45deg, rgba(124,109,176,1), rgba(171,162,205,1));
 }
 
+/*make card appear when hovered*/
 .project-box:hover .overlay{
     opacity: 1;
 }
 
+/*repo link button styling and amination*/
 .project-box button {
     background: black;
     border: none;
@@ -667,6 +683,7 @@ nav {
     to {transform:rotate(359deg);}
 }
 
+/*projects page ipad sizing and styling*/
 @media only screen and (min-width: 768px) {
     .flexbox-container-projects {
         justify-content: center;
@@ -678,6 +695,7 @@ nav {
     }
 }
 
+/*projects page desktop sizing and styling*/
 @media only screen and (min-width: 1024px) {
     .flexbox-container-projects {
         justify-content: flex-start;
@@ -687,8 +705,10 @@ nav {
         flex-basis: 29%;
     }
 }
+
 /*------------------------blog page------------------------*/
 
+/*flexbox contain for blog page*/
 .flexbox-container-blog {
     display: flex;
     flex-flow: row wrap;
@@ -698,6 +718,7 @@ nav {
     margin: 5% 10% 5% 10%;
 }
 
+/*blog card containers*/
 .blog-box {
     position: relative;
     margin: 1em;
@@ -707,6 +728,7 @@ nav {
     box-sizing: border-box;
     padding-bottom: 10px;
 
+    /*blog card image styling*/
     img {
         display: block;
         margin: 0px auto 10px;
@@ -729,6 +751,7 @@ nav {
         display: block;
     }
 
+    /*read more blog card buttons styling*/
     button {
         display: block;
         background-color: $font-background-1;
@@ -749,7 +772,7 @@ nav {
     }
 }
 
-
+/*blog ipad sizing and styling*/
 @media only screen and (min-width: 768px) {
     .flexbox-container-blog {
         justify-content: center;
@@ -759,7 +782,7 @@ nav {
         flex-basis: 40%;
     }
 }
-
+/*blog desktop sizing and styling*/
 @media only screen and (min-width: 1024px) {
     .flexbox-container-blog {
         width: 85vw;
@@ -783,6 +806,7 @@ nav {
         padding-bottom: 5px;
     }
 
+    /*feature image styling*/
     img {
         width: 100%;
         height: 30vh;
@@ -797,6 +821,7 @@ nav {
     }
 }
 
+/*post content text styling*/
 .post-content {
     p {
         margin-top: 10px;
@@ -809,12 +834,14 @@ nav {
 
 /*------------------------contact page------------------------*/
 
+/*contact form container for mobile*/
 .contact-form-container {
     width: 80vw;
     position: relative;
     margin: 0px auto;
 }
 
+/*contact form styling*/
 #contact-form {
     background: $secondary-color;
     padding: 25px;
@@ -837,14 +864,13 @@ nav {
         font-family: 'VT323', monospace;
     }
 
+    /*styling the feilds on contact form*/
     fieldset {
-
         border: medium none !important;
 	    margin: 0 0 10px;
 	    min-width: 100%;
 	    padding: 0;
 	    width: 100%;
-
 
         input {
             font-family: $secondary-game-font;
@@ -890,19 +916,8 @@ nav {
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .contact-form-container {
-        width: 60%;
-    }
-}
 
-@media only screen and (min-width: 1024px) {
-    .contact-form-container {
-        width: 50%;
-    }
-}
-	
-
+/*styling the find me social links section on contact page*/
 #find {
     text-align: center;
 }
@@ -934,8 +949,11 @@ nav {
     }
 }
 
+/*contact page ipad styling and sizing*/
 @media only screen and (min-width: 768px) {
-    
+    .contact-form-container {
+        width: 60%;
+    }
 
     .find-me-box {
         img {
@@ -944,9 +962,11 @@ nav {
         }
     }
 }
-
+/*contact page desktop styling and sizing*/
 @media only screen and (min-width: 1024px) {
-    
+    .contact-form-container {
+        width: 50%;
+    }
 
     .find-me-box {
         img {
@@ -955,7 +975,6 @@ nav {
         }
     }
 }
-
 
 /*------------------------Footer------------------------*/
 footer {
@@ -993,7 +1012,7 @@ footer {
 
 /*-----------About auto slider---------------*/
 
-/* contain the main slider */
+/*container for the slider */
 
 .flexbox-container-about {  
 

@@ -1,3 +1,33 @@
+commit 7f5fd86bbebc782b7adeed8a6ac9183aa6b6c598
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Tue Sep 1 14:41:21 2020 +1000
+
+    finished styling about page and the icon on the nav bar
+
+commit ed9df974b141897a609a3580c4c444e27372e355
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Tue Sep 1 12:12:52 2020 +1000
+
+    skills progress bars on the about page added and styled
+
+commit 742b118fab780f7a2938ffeadbf643044ae0a4c4
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Tue Sep 1 10:04:53 2020 +1000
+
+    project cards styled with overlay effect and link to github added
+
+commit f1902a1614feb7302a7d431c0ee815cbe627624a
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Mon Aug 31 13:55:12 2020 +1000
+
+    added the heading-box container to all h1 headings on main pages to allow me to create awesome underline effect
+
+commit ddedc8b4e5422e34a8bb84287e7562864c890ac7
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Mon Aug 31 11:34:13 2020 +1000
+
+    ipad and desktop media breaks adjusted to media page
+
 commit 4a150894d8aaee5b5cd9b6713d5679bce497b02f
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Mon Aug 31 08:33:07 2020 +1000
