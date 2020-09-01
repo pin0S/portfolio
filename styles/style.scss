@@ -14,6 +14,7 @@ $a-button: #E15554;
 /*fonts*/
 $heading-font: 'Roboto Mono', monospace;
 $post-font: Georgia, serif;
+$secondary-game-font: 'VT323', monospace;
 $nav-font: 'Press Start 2P', cursive;
 $font-color: #000;
 $secondary-font-color: #fff;
@@ -25,7 +26,7 @@ $font-background-1: rgb(167, 164, 224);
 /*mixins*/
 
 
-
+/*------------------------animations------------------------*/
 /*nav elements*/
 
 @mixin nav-box {
@@ -34,7 +35,8 @@ $font-background-1: rgb(167, 164, 224);
     border-radius: 10%;
 }
 
-/*animations*/
+
+/*------------------------animations------------------------*/
 
 @mixin animate-headings {
     position: relative;
@@ -118,20 +120,19 @@ p {
 }
 
 #heading-box {
-    padding-top: 2%;
+    padding-top: 4%;
     text-align: center;
 }
 
 #section-heading {
     display: inline-block;
-    font-family: $heading-font;
+    font-family: $secondary-game-font;
     font-size: 40px;
     text-align: center;
     background: linear-gradient(to top, rgba(135, 114, 209, 0.4) 30%, transparent 30%); 
 }
 
-/*section styling*/
-
+/*------------------------section styling------------------------*/
 
 section {
 
@@ -142,8 +143,7 @@ section {
 
 }
 
-
-/*homepage*/
+/*------------------------homepage------------------------*/
 
 .hero-image {
     position: relative;
@@ -262,8 +262,7 @@ section {
 
 }
 
-
-/*navbar*/
+/*------------------------navbar------------------------*/
 
 header {
     background-color: $primary-color;
@@ -334,8 +333,7 @@ nav {
     }
 }
 
-
-/*big screen navbar*/
+/*------------------------big screen navbar------------------------*/
 
 @media only screen and (min-width: 768px) {
 
@@ -387,8 +385,7 @@ nav {
 
     }
 }
-    
-/*about page*/
+/*------------------------about page------------------------*/    
 
 .flexbox-container-about {
     display: flex;
@@ -485,8 +482,7 @@ nav {
         margin-left: 0px;
     }
 }
-
-/* projects page*/
+/*------------------------projects page------------------------*/
 
 .flexbox-container-projects {
     display: flex;
@@ -518,7 +514,51 @@ nav {
         width: 100%;
         max-height: 300px;
     }
+}
 
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(45deg, rgba(124,109,176,1), rgba(171,162,205,1));
+}
+
+.project-box:hover .overlay{
+    opacity: 1;
+}
+
+.project-box button {
+    background: black;
+    border: none;
+    font-size: 20px;
+    font-style: $nav-font;
+    padding: 5px 30px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.project-box button a {
+    text-decoration: none;
+    color: hotpink;
+}
+
+.project-box button:hover {
+    animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg)}
+    to {transform:rotate(359deg);}
 }
 
 @media only screen and (min-width: 768px) {
@@ -541,9 +581,7 @@ nav {
         flex-basis: 29%;
     }
 }
-
-/*blog page*/
-
+/*------------------------blog page------------------------*/
 
 .flexbox-container-blog {
     display: flex;
@@ -592,6 +630,7 @@ nav {
         box-shadow: $button-shadow #66569F;
         font-family: $heading-font;
         margin: 10px 0px 0px 10px;
+        padding: 0px 5px;
     }
 
     button:hover {
@@ -626,12 +665,12 @@ nav {
         flex-basis: 29%;
     }
 }
-
-/*blog posts*/
+/*------------------------blog posts------------------------*/
 
 .blog-post-container {
-    padding: 55px 10px 40px 10px;
-    background-color: $secondary-color;
+    padding: 30px 10px 40px 10px;
+    width: 85wv;
+    margin: 0px 10px;
 
     h2 {
         font-size: 2em;
@@ -640,7 +679,10 @@ nav {
 
     img {
         width: 100%;
-        margin-bottom: 10px;
+        height: 30vh;
+        object-fit: cover;
+        margin: 10px auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     h5 {
@@ -651,6 +693,7 @@ nav {
 
 .post-content {
     p {
+        margin-top: 10px;
         margin-bottom: 20px;
         line-height: 1.5;
         font-family: $post-font;
@@ -658,7 +701,7 @@ nav {
     }
 }
 
-/*contact page*/
+/*------------------------contact page------------------------*/
 
 .contact-form-container {
     width: 80vw;
@@ -685,7 +728,7 @@ nav {
         margin:5px 0 15px;
         display:block;
         font-size: 1em;
-        font-family: 'VT323', monospace;;
+        font-family: 'VT323', monospace;
     }
 
     fieldset {
@@ -698,6 +741,8 @@ nav {
 
 
         input {
+            font-family: $secondary-game-font;
+            color: $primary-color;
             width:90%;
             border:1px solid #CCC;
             background:#FFF;
@@ -706,6 +751,8 @@ nav {
         }
 
         textarea {
+            font-family: $secondary-game-font;
+            color: $primary-color;
             width:90%;
             border:1px solid #CCC;
             background:#FFF;
@@ -716,21 +763,37 @@ nav {
         }
 
         button {
+            font-family: $secondary-game-font;
             cursor:pointer;
             width:90%;
             border:1px solid transparent;
+            border-radius: 5%;
             background: $font-background-1;
+            box-shadow: 3px 3px 3px 3px #7C6DB0;
             color:#FFF;
             margin:0 0 5px;
-            padding:10px;
+            padding: 10px;
             font-size: 1em;
             box-sizing: content-box;
+            
         }
 
         button:hover {
             background:#09C;
             transition:background 0.3s ease-in-out;
         }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-form-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .contact-form-container {
+        width: 50%;
     }
 }
 	
@@ -768,12 +831,22 @@ nav {
 
 @media only screen and (min-width: 768px) {
     
-    
-    
+
     .find-me-box {
         img {
             width: 56px;
             height: 56px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+
+    .find-me-box {
+        img {
+            width: 72px;
+            height: 72px;
         }
     }
 }
