@@ -202,6 +202,15 @@ section {
 
 }
 
+.logo:hover {
+    animation: rumble 0.3s linear;
+}
+
+@keyframes rumble {
+    25% {transform: rotate(20deg);}
+    75% {transform: rotate(-20deg);}
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -446,8 +455,67 @@ nav {
     background-color:#5abe62;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     transition: width 0.6s ease;
-    animation: progressBar 3s ease-in-out;
     animation-fill-mode:both;
+    }
+
+.html {
+    width: 70%;
+    animation: html 2s ease-out forwards;
+}
+
+.css {
+    width: 50%;
+    animation: css 2s ease-out forwards;
+}
+
+.marketing {
+    width: 80%;
+    animation: marketing 2s ease-out forwards;
+}
+
+.rubs {
+    width: 20%;
+    animation: rubs 2s ease-out forwards;
+}
+
+.javascript {
+    width: 20%;
+    animation: javascript 2s ease-out forwards;
+}
+
+.basketball {
+    width: 100%;
+    animation: basksetball 2s ease-out forwards;
+}
+
+@keyframes html {
+    0% {width: 0%;}
+    100% {width: 70%;}
+}
+
+@keyframes css {
+    0% {width: 0%;}
+    100% {width: 50%;}
+}
+
+@keyframes marketing {
+    0% {width: 0%;}
+    100% {width: 80%;}
+}
+
+@keyframes rubs {
+    0% {width: 0%;}
+    100% {width: 20%;}
+}
+
+@keyframes javascript {
+    0% {width: 0%;}
+    100% {width: 20%;}
+}
+
+@keyframes basksetball {
+    0% {width: 0%;}
+    100% {width: 100%;}
 }
 
 .pull-left{
@@ -456,35 +524,28 @@ nav {
     margin: auto 0px;
 }
 
-
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
 /*download resume*/
 
 #box-resume {
     display: flex;
+    justify-content: center;
 
-    ul {
-        list-style: none;   
-    }
-
-    li {
-        display: inline;
-        font-size: 1em;
-        padding-left: 10px;
-        font-family: $post-font;
-        }
     
-    li img {
+    a {
+        text-decoration: none;
+        display: inline;
+        font-size: 0.7em;
+        padding: 20px;
+        background: $hover-color;
+        border-radius: 4%;
+        color: $secondary-font-color;
+        font-family: $nav-font;
+    }
+    
+    a img {
         width: 20px;
         height: 20px;
-    }
-
-    li a {
-        text-decoration: none;
+        padding-left: 5px;
     }
 
     #get {
@@ -812,7 +873,6 @@ nav {
             cursor:pointer;
             width:90%;
             border:1px solid transparent;
-            border-radius: 5%;
             background: $font-background-1;
             box-shadow: 3px 3px 3px 3px #7C6DB0;
             color:#FFF;
@@ -935,7 +995,7 @@ footer {
 
 /* contain the main slider */
 
-.flexbox-container-about {
+.flexbox-container-about {  
 
 .slide-wrap { 
     position: relative;
@@ -944,7 +1004,7 @@ footer {
     transition:300ms;
   }
   
-  /* ensure that we can adjust z-index or position elements absolutely within the slideshow itself (e.g., navigation) */
+  /* ensure that we can adjust z-index or position elements absolutely within the slideshow itself*/
   
   .slideshow { 
     position: relative;
@@ -976,9 +1036,9 @@ footer {
           color: $x-button;
       }
     }
-  }
+    }   
   
-  /* set up our basic left/right navigation, would should ideally be vertically centered */
+  /* set up our basic left/right navigation*/
   
   .slide-nav { 
     display: flex;
