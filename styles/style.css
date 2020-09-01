@@ -41,7 +41,6 @@ p {
 
 #section-heading {
   display: inline-block;
-  font-family: "VT323", monospace;
   font-size: 40px;
   text-align: center;
   background: linear-gradient(to top, rgba(135, 114, 209, 0.4) 30%, transparent 30%); }
@@ -252,20 +251,61 @@ nav a {
   display: inline-block;
   font-style: italic; }
 
-#box-resume ul {
-  list-style: none; }
-#box-resume li {
-  display: inline;
-  font-size: 1em;
-  padding-left: 10px;
-  font-family: Georgia, serif; }
-#box-resume li img {
-  width: 20px;
-  height: 20px; }
-#box-resume li a {
-  text-decoration: none; }
-#box-resume #get {
-  padding-bottom: 10px; }
+/*skills bars*/
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+.progress {
+  width: 100%;
+  overflow: hidden;
+  height: 15px;
+  margin: 5px auto;
+  float: right;
+  background-color: #000;
+  border: 5px double #f4f4f8;
+  border-radius: 2%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.progress-bar {
+  float: left;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #5abe62;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  transition: width 0.6s ease;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: both; }
+
+.pull-left {
+  float: left;
+  padding-right: 4px;
+  margin: auto 0px; }
+
+@keyframes progressBar {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+/*download resume*/
+#box-resume {
+  display: flex; }
+  #box-resume ul {
+    list-style: none; }
+  #box-resume li {
+    display: inline;
+    font-size: 1em;
+    padding-left: 10px;
+    font-family: Georgia, serif; }
+  #box-resume li img {
+    width: 20px;
+    height: 20px; }
+  #box-resume li a {
+    text-decoration: none; }
+  #box-resume #get {
+    padding-bottom: 10px; }
 
 @media only screen and (min-width: 768px) {
   #about-photo {
