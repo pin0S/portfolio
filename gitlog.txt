@@ -1,3 +1,9 @@
+commit c48d23eee8acd115e7347dcd64ba6b0223888d43
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Tue Sep 1 16:01:14 2020 +1000
+
+    comments and code refactored in css and html
+
 commit 7f5fd86bbebc782b7adeed8a6ac9183aa6b6c598
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Tue Sep 1 14:41:21 2020 +1000
