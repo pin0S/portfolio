@@ -36,26 +36,26 @@ Features were the fun part designed to show off some of my coding ability and to
 
 Sitemap
 ------
-![site map for Portfolio](sitemap.png)
+![site map for Portfolio](docs/sitemap.png)
 
 Screenshots
 ------
 #### Homepage
-![Homepage screenshots | Mobile | iPad | Desktop](Pages-screenshots/homepage-screenshot.png)
+![Homepage screenshots | Mobile | iPad | Desktop](docs/Pages-screenshots/homepage-screenshot.png)
 #### About page
-![About page screenshots | Mobile | iPad | Desktop](Pages-screenshots/about-screenshot.png)
+![About page screenshots | Mobile | iPad | Desktop](docs/Pages-screenshots/about-screenshot.png)
 #### Projects
-![Projects page screenshots | Mobile | iPad | Desktop](Pages-screenshots/projects-screenshot.png)
+![Projects page screenshots | Mobile | iPad | Desktop](docs/Pages-screenshots/projects-screenshot.png)
 #### Blog
-![Blog page screenshots | Mobile | iPad | Desktop](Pages-screenshots/blog-screenshot.png)
+![Blog page screenshots | Mobile | iPad | Desktop](docs/Pages-screenshots/blog-screenshot.png)
 #### Contact
-![Contact page screenshots | Mobile | iPad | Desktop](Pages-screenshots/contact-screenshot.png)
+![Contact page screenshots | Mobile | iPad | Desktop](docs/Pages-screenshots/contact-screenshot.png)
 #### Blog post
-![Blog post page screenshots | Mobile | iPad | Desktop](Pages-screenshots/blog-post-screenshot.png)
+![Blog post page screenshots | Mobile | iPad | Desktop](docs/Pages-screenshots/blog-post-screenshot.png)
 
-Mobile screenshots: [here](/Mobile-screenshots)<br>
-iPad screenshots: [here](/iPad-screenshots)<br>
-Desktop screenshots: [here](/Desktop)<br>
+Mobile screenshots: [here](docs//Mobile-screenshots)<br>
+iPad screenshots: [here](docs//iPad-screenshots)<br>
+Desktop screenshots: [here](docs//Desktop-screenshots)<br>
 
 Target Audience
 ------
