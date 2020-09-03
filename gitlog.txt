@@ -1,3 +1,16 @@
+commit 35e799eb2426008b25b47b9c0c5c2c65bc159a85
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Thu Sep 3 10:20:35 2020 +1000
+
+    sri updated, all alt text added to images and target=_blank added external links
+
+commit b9b031c0e279dae5f306db4c09ff0075eee1e61c
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Sep 2 14:20:13 2020 +1000
+
+    added SRI to for stylesheet and js files to all html pages
+
+
 commit c48d23eee8acd115e7347dcd64ba6b0223888d43
 Author: pin0s <pete.g.lynch@gmail.com>
 Date:   Tue Sep 1 16:01:14 2020 +1000
