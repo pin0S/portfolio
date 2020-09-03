@@ -1,0 +1,65 @@
+commit b9e4c2fa3dff4f3c90c25e66f5177335e36407f5
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 16:10:39 2020 +1000
+
+    added html for the contact page based on wireframe
+
+commit 8f444a4d79dab937b950643ebf543e6803248e6e
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:59:58 2020 +1000
+
+    added html for wireframe elements of the projects page
+
+commit c374dd59a9a924b5e8ec3b9df32e98dbe69cb66e
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:40:26 2020 +1000
+
+    added html link placeholder for resume
+
+commit e8f41fb5974b3c10e4d8216fdac9cb62790b7703
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:34:31 2020 +1000
+
+    added html structure for about page
+
+commit 8fbff3c02699694f9251234806fe5816a1660d66
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:22:01 2020 +1000
+
+    added blog.html contact.html and projects.html with boiler plate html to the repo to the pages folder
+
+commit ddb8522edb224c65611d8ab783fa8cfb385607c9
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:17:05 2020 +1000
+
+    added about.html to pages folder
+
+commit 89563f45c52bc2ac82fdb8ecf71e3b966f0027a5
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:13:31 2020 +1000
+
+    added html structure for social media icons on index.html
+
+commit c8f0683f5290201879b2c6ce3b033ce109255a03
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 15:00:50 2020 +1000
+
+    added html structure for hero section on index.html
+
+commit 63140150390dcfcbb1ee982ac8298619ba0089f6
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 14:53:56 2020 +1000
+
+    added HTML for navbar
+
+commit cd7579b64c9b7c578117d8b22f1978a501744721
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 14:45:31 2020 +1000
+
+    added head metadata
+
+commit 6c33ab0cb91126b6dc934c8309aeb3550107e29c
+Author: pin0s <pete.g.lynch@gmail.com>
+Date:   Wed Aug 26 13:24:21 2020 +1000
+
+    initalise repo
