@@ -1,3 +1,9 @@
+Links
+------
+Portfolio URL deployed on Netlify [here](https://peter-lynch.netlify.app/index.html)<br>
+Ed Workspace [here](https://edstem.org/courses/4464/workspaces/pKAuXdXPXw4xGq6gGQwV83bfVxRoiQsc)<br>
+
+
 Purpose
 ------
 The purpose of this portfolio website was to make it as easy as possible for potential employers to understand who I am, what work I have done, my skills and how I can contribute to their business success.
@@ -39,7 +45,7 @@ Screenshots
 #### About page
 ![About page screenshots | Mobile | iPad | Desktop](Pages-screenshots/about-screenshot.png)
 #### Projects
-![Projects page screenshots | Mobile | iPad | Desktop](/ages-screenshots/projects-screenshot.png)
+![Projects page screenshots | Mobile | iPad | Desktop](Pages-screenshots/projects-screenshot.png)
 #### Blog
 ![Blog page screenshots | Mobile | iPad | Desktop](Pages-screenshots/blog-screenshot.png)
 #### Contact
@@ -47,9 +53,9 @@ Screenshots
 #### Blog post
 ![Blog post page screenshots | Mobile | iPad | Desktop](Pages-screenshots/blog-post-screenshot.png)
 
-Mobile screenshots: [here](/Mobile-screenshots)
-iPad screenshots: [here](/iPad-screenshots)
-Desktop screenshots: [here](/Desktop)
+Mobile screenshots: [here](/Mobile-screenshots)<br>
+iPad screenshots: [here](/iPad-screenshots)<br>
+Desktop screenshots: [here](/Desktop)<br>
 
 Target Audience
 ------
@@ -58,13 +64,13 @@ platforms.
 
 Tech Stack
 ------
-The technology I used to create this website was:
-HTML (main structure of page)
-CSS (responsive design and styling)
-JavaScript (Carousel element on about page)
-Balsamiq (wireframing)
-Git (version control)
-Github (remote version control)
-Google Fonts
-Responsively.app (check responsiveness/screenshots)
-Draw.io (sitemap)
+The technology I used to create this website was:<br>
+HTML (main structure of page)<br>
+CSS (responsive design and styling)<br>
+JavaScript (Carousel element on about page)<br>
+Balsamiq (wireframing)<br>
+Git (version control)<br>
+Github (remote version control)<br>
+Google Fonts<br>
+Responsively.app (check responsiveness/screenshots)<br>
+Draw.io (sitemap)<br>
